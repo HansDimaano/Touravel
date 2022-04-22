@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
+
+@import "Header_and_Footer.css";
+@import "RevealAnimation.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+.title_container {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/sevenemirates_bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 0 30px;
+	padding-top: 175px;
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+	.title_container img{
+		width: 45%;
+		margin-right: 40px;
+		animation: start-animation 1s ease-in-out;
+	}
+
+.aboutUAE {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	min-height: 500px;
+	border-radius: 40px;
+	padding: 10px 30px;
+	background-color: black;
+	text-align: center;
+	animation: start-animation 1s ease-in-out;
+}
+
+@keyframes start-animation{
+	from{
+		opacity: 0;
+		transform: translateY(15px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+	.aboutUAE h3 {
+		color: white;
+		font-size: 50px;
+		font-family: 'Julius Sans One', sans-serif;
+		letter-spacing: 10px;
+		line-height: 70px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.aboutUAE p {
+		color: white;
+		font-size: 17px;
+		font-family: 'Forum', cursive;
+		letter-spacing: 3px;
+		line-height: 30px;
+	}
+
+.emirate{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+	height: 500px;
+}
+
+	.emirate .text {
+		width: 40%;
+		margin: 80px;
+		padding-bottom: 20px;
+	}
+
+	.emirate .text h1 {
+		margin-top: 0;
+		color: white;
+		font-size: 50px;
+		font-family: 'Julius Sans One', sans-serif;
+		letter-spacing: 30px;
+		text-shadow: 2px 2px black;
+	}
+
+	.emirate .text p {
+		color: white;
+		font-size: 17px;
+		font-family: 'Forum', cursive;
+		letter-spacing: 3px;
+		line-height: 30px;
+		margin-bottom: 50px;
+	}
+
+	.emirate .text a {
+		color: black;
+		background-color: #EFB34C;
+		padding: 10px 60px;
+		font-size: 17px;
+		font-family: 'Forum', cursive;
+		letter-spacing: 3px;
+		line-height: 30px;
+		text-decoration: none;
+	}
+
+	.emirate.left .text a:hover {
+		cursor: pointer;
+		background-color: #1C352D;
+		color: #EFB34C;
+	}
+
+	.emirate.right .text a:hover {
+		cursor: pointer;
+		background-color: #5B9456;
+		color: #EFB34C;
+	}
+
+	.emirate img{
+		width: 40%;
+	}
+
+	.emirate.left {
+		background-color: #5B9456;
+		text-align: right;
+		flex-direction: row;
+	}
+
+	.emirate.right {
+		background-color: #1C352D;
+		text-align: left;
+		flex-direction: row-reverse;
+	}

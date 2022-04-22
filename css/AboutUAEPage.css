@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
+
+@import "Header_and_Footer.css";
+@import "RevealAnimation.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.title_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/aboutUAE_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 175px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title_container > *{
+    animation: start-animation 1s ease-in-out;
+}
+
+@keyframes start-animation {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+    .title_container h5 {
+        color: white;
+        font-size: 20px;
+        font-family: 'Julius Sans One', sans-serif;
+        letter-spacing: 10px;
+        margin: 0;
+    }
+
+    .title_container h1 {
+        color: white;
+        font-size: 80px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: 3px white;
+        letter-spacing: 10px;
+        line-height: 100px;
+        width: 1000px;
+        margin: 30px;
+    }
+
+    .title_container p {
+        color: white;
+		font-size: 17px;
+		font-family: 'Forum', cursive;
+		letter-spacing: 3px;
+		line-height: 30px;
+        width: 1000px;
+    }
+
+    .title_container a {
+        margin: 0;
+        margin-top: 30px;
+        margin-left: -2%;
+        padding: 9px 18px;
+        border: 3px solid white;
+        border-radius: 10px;
+        box-shadow: 3px 3px black;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .title_container a:hover {
+        margin-top: 28px;
+        border-color: #4D7850;
+        background-color: #4D7850;
+        font-size: 17px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+
+    .title_container a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+.subheading {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/subheading_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .subheading h3 {
+        font-size: 30px;
+        font-family: 'Julius Sans One', sans-serif;
+        text-shadow: 2px 2px black;
+        letter-spacing: 25px;
+        line-height: 50px;
+        color: white;
+        padding: 10px 0;
+    }
+
+.UAE_facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD690;
+    padding: 30px 0;
+}
+
+    .UAE_facts img {
+        width: 900px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+.national {
+    display: flex;
+    border: 7px solid #9D432A;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 70px;
+}
+
+.national.left{
+    flex-direction: row;
+    text-align: left;
+}
+
+.national.right{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.img_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9D432A;
+    width: 35%;
+    margin: -1px;
+}
+
+.img_wrap img{
+    margin: 50px 0;
+    width: 80%;
+}
+
+.national_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: inherit;
+    width: 70%;
+    margin: -1px;
+    padding: 0 50px;
+    background-color: #c99d53;
+}
+
+    .national_desc h3 {
+        font-size: 40px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: 3px #9D432A;
+        letter-spacing: 25px;
+        color: #9D432A;
+    }
+
+    .national_desc p {
+        font-size: 20px;
+        font-family: 'Forum', cursive;
+        -webkit-text-stroke: 1px #9D432A;
+        letter-spacing: 4px;
+        line-height: 30px;
+        color: #9D432A;
+    }
+
+.article {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    height: 500px;
+}
+
+.article img {
+    width: 40%;
+}
+
+    .article .text {
+        width: 40%;
+        padding: 20px 0;
+    }
+
+    .article.left .text{
+        margin-right: 80px;
+    }
+
+    .article.right .text {
+        margin-left: 80px;
+    }
+
+    .article .text h1 {
+		margin-top: 0;
+		color: white;
+		font-size: 40px;
+		font-family: 'Julius Sans One', sans-serif;
+		letter-spacing: 10px;
+		text-shadow: 2px 2px black;
+	}
+
+    .article .text p {
+		color: white;
+		font-size: 17px;
+		font-family: 'Forum', cursive;
+		letter-spacing: 3px;
+		line-height: 30px;
+		margin-bottom: 50px;
+	}
+
+    .article .text a {
+		color: black;
+		background-color: #EFB34C;
+		padding: 10px 40px;
+		font-size: 17px;
+		font-family: 'Forum', cursive;
+		letter-spacing: 3px;
+		line-height: 30px;
+        text-decoration: none;
+	}
+
+    .article.left .text a:hover {
+        cursor: pointer;
+        background-color: #5E200F;
+        color: #EFB34C;
+    }
+
+    .article.right .text a:hover {
+        cursor: pointer;
+        background-color: #9D432A;
+        color: #EFB34C;
+    }
+
+    .article.left {
+        background-color: #9D432A;
+        flex-direction: row;
+    }
+
+    .article.right {
+        background-color: #5E200F;
+        flex-direction: row-reverse;
+    }

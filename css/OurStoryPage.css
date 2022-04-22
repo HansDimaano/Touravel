@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
+
+@import "Header_and_Footer.css";
+@import "RevealAnimation.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.title_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/ourstory_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.about_touravel {
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+    margin-bottom: 50px;
+    margin-left: -50px;
+    animation: down-animation 1s ease-in-out;
+}
+
+.about_touravel img{
+    height: 100%;
+}
+
+.title_container p {
+    width: 60%;
+    font-family: 'Forum', cursive;
+    letter-spacing: 4px;
+    line-height: 30px;
+    text-align: left;
+    text-shadow: 2px 2px black;
+    animation: down-animation 1s ease-in-out;
+}
+
+@keyframes down-animation {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.meet_our_team {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #EFB34C;
+}
+
+.subheading {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/subheading_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subheading h3 {
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-shadow: 2px 2px black;
+    letter-spacing: 25px;
+    color: white;
+}
+
+.meet_our_team_desc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #194A40;
+}
+
+.meet_our_team_desc div {
+    width: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/ourstory_teamdesc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.meet_our_team_desc p {
+    width: 40%;
+    padding: 5px 50px;
+    text-align: left;
+    font-size: 19px;
+    font-family: 'Forum', cursive;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.meet_our_team.members {
+    margin: 50px 0;
+    width: 90%;
+}
+
+.member{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member_desc {
+    width: 100%;
+    padding: 2% 0;
+    max-height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+    .member_desc h3 {
+        font-size: 30px;
+        font-family: 'Julius Sans One', sans-serif;
+        text-shadow: 2px 2px black;
+        letter-spacing: 25px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+.member_desc p{
+    font-family: 'Forum', cursive;
+    font-size: 17px;
+    letter-spacing: 4px;
+    line-height: 25px;
+    max-width: 80%;
+    margin: 0;
+}
+
+.member_desc.erlin{
+    background-color: #88B07C;
+}
+
+.member_desc.hans{
+    background-color: #6E9463;
+}
+
+.member_desc.gerald{
+    background-color: #4D7850;
+}
+
+.member_desc.saker{
+    background-color: #34584C;
+}
+
+.member_desc.karl{
+    background-color: #1C352D;
+}
+
+.member_desc.left{
+    float: left;
+    border-radius: 50px;
+    margin-right: -80px;
+}
+
+.member_desc.right{
+    float: right;
+    border-radius: 50px;
+    margin-left: -80px;
+}
+
+.member img {
+    width: 20%;
+    min-height: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.member img.left{
+    float: left;
+}
+
+.member img.right{
+    float: right;
+}
+
+.contact_details {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #1C352D;
+}
+
+.contact_details img{
+    margin: 75px 0;
+    margin-left: -40px;
+    height: 100px;
+}
+
+.contacts {
+    width: 90%;
+    background-color: white;
+    color: black;
+    border: 15px solid #34584C;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.contacts h3 {
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #1C352D;
+    text-shadow: .5px .5px #1C352D;
+    letter-spacing: 10px;
+    margin-left: 3%;
+    z-index: 1;
+}
+
+.contacts .details{
+    width: 70%;
+    display: flex;
+}
+
+.contacts .details p{
+    font-family: 'Forum', cursive;
+    font-size: 17px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    margin-left: 40px;
+}
+
+.details .address, .details .socials{
+    width: 50%;
+}
+
+.contacts img{
+    float: right;
+    margin: 30px 40px;
+    height: 120px;
+    z-index: 3;
+}
+
+.interactions{
+    width: 90%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.send_email{
+    width: 50%;
+    display: flex;
+    padding-right: 12.5px;
+}
+
+input[type=text], textarea {
+    width: 48.5%;
+    padding: 20px 10px;
+    background-color: white;
+    border: 15px solid #34584C;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    resize: none;
+}
+
+input[type=text]::placeholder, textarea::placeholder{
+    font-size: 15px;
+    color: black;
+    letter-spacing: 4px;
+}
+
+input[type=text]:focus, textarea:focus{
+    outline: none;
+    border: 15px solid #4D7850;
+}
+
+.left_input{
+    float: left;
+}
+
+.right_input{
+    float: right;
+}
+
+input[type=submit] {
+    font-size: 17px;
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #34584C;
+    color: #EFB34C;
+    float: right;
+    padding: 10px 15px;
+    border: none;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #4D7850;
+}
+
+.g_map {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12.5px;
+}
+
+iframe {
+    width: 100%;
+    height: 510px;
+    margin-bottom: 25px;
+}
+
+.social_media{
+    display: flex;
+}
+
+.social_media a{
+    float: left;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.social_media a img{
+    float: left;
+    margin: 0;
+    height: 40px;
+}
