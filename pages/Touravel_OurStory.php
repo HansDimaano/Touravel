@@ -193,15 +193,22 @@ include '../data/codes.php'; // include the codes.php data
             <!-- Send Email section -->
             <div class="send_email">
 
-                <!-- Message Form (all our required to be filled up to send an email) -->
-                <form method="post" name="email_form" action="../data/send_email.php" style="width: 100%">
+                <!-- Message Form (all are required to be filled up to send an email) -->
+                <form id="email_form" method="POST" style="width: 100%; margin: 0">
 
-                    <input type="text" name="Name" placeholder="Name" maxlength="25" class="left_input" required/>
-                    <input type="text" name="Subject" placeholder="Subject" maxlength="50" class="right_input" required />
-                    <textarea name="Message" placeholder="Message" required></textarea>
-                    <input type="submit" name="Submit" value="Send Message"/>
+                    <input type="email" name="Email" placeholder="Email" required/> <!-- Email required -->
+                    <input type="text" name="Name" placeholder="Name" maxlength="25" class="left_input" required/> <!-- Name required -->
+                    <input type="text" name="Subject" placeholder="Subject" maxlength="50" class="right_input" required /> <!-- Subject required -->
+                    <textarea name="Message" placeholder="Message" required></textarea> <!-- Message required -->
+                    <button type="submit" class="sendMessage_btn" id="send_btn"/>Send Message</button> <!-- Send Message Button -->
 
+                    <!-- Messsage sent text (shown only after message is sent) -->
+                    <p id="message_sent_txt">Message Sent!</p> 
                 </form>
+
+                <!-- link script for sending emails -->
+                <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+                <script src="../javascript/Send_Email.js"></script>
             </div>
 
             <!-- Google Map and Social Media section -->
