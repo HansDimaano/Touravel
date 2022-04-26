@@ -65,10 +65,17 @@ $footer_general = '<footer>
                                 <p>
                                     Let us stay connected! Do not hesitate to reach out to us by sending us an Email.
                                 </p>
-                                <form method="post" name="connect_form" action="">
+                                <form id="email_form" method="POST" >
+                                    <input type="email" name="Email" placeholder="Email" required/>
+                                    <input type="text" name="Name" placeholder="Name" maxlength="25" class="left_input" required/>
+                                    <input type="text" name="Subject" placeholder="Subject" maxlength="50" class="right_input" required />
                                     <textarea name="Message" placeholder="Write your message here." required></textarea>
                                     <input type="submit" name="Submit" value="SEND EMAIL" />
+                                    <p id="message_sent_txt">Message Sent!</p>
                                 </form>
+
+                                <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+                                <script src="../javascript/Send_Email.js"></script>
                             </div>
                             <div class="explore">
                                 <h3>EXPLORE</h3>
