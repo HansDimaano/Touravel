@@ -157,7 +157,29 @@ footer .connect_us p{
     line-height: 25px;
 }
 
-footer textarea{
+input[type=email], input[type=text] {
+    width: 48.5%;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    border: 5px solid white;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+input[type=email] {
+   width: 100%;
+}
+
+.left_input {
+    float: left;
+}
+
+.right_input {
+    float: right;
+}
+
+footer textarea {
     width: 100%;
     background-color: transparent;
     color: white;
@@ -170,17 +192,21 @@ footer textarea{
     line-height: 25px;
 }
 
-    footer textarea::placeholder {
+    input[type=email]::placeholder, input[type=text]::placeholder, textarea::placeholder {
         color: white;
         font-size: 14px;
         font-family: 'Forum', cursive;
         letter-spacing: 2px;
         line-height: 25px;
     }
-    
-    footer textarea:focus{
+
+    input[type=email]:focus, input[type=text]:focus, textarea:focus {
         border-color: #4D7850;
         outline: none;
+    }
+
+    input:valid, input:invalid{
+        background-color: transparent;
     }
 
 footer input[type=submit]{
@@ -200,6 +226,15 @@ footer input[type=submit]{
         background-color: #4D7850;
         color: white;
     }
+
+form p {
+    color: #EFB34C;
+    display: none;
+}
+
+form p.active{
+    display: block;
+}
 
 footer .explore{
     display: flex;
