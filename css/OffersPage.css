@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
+
+@import "Header_and_Footer.css";
+@import "RevealAnimation.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.title_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/offers_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 175px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+    .title_container > * {
+        animation: start-animation 1s ease-in-out;
+    }
+
+@keyframes start-animation {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.title_container h5 {
+        color: white;
+        font-size: 20px;
+        font-family: 'Julius Sans One', sans-serif;
+        letter-spacing: 10px;
+        margin: 0;
+}
+
+    .title_container h1 {
+        color: white;
+        font-size: 80px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: 3px white;
+        letter-spacing: 10px;
+        line-height: 100px;
+        width: 1000px;
+        margin: 30px;
+    }
+
+    .title_container p {
+        color: white;
+		font-size: 17px;
+		font-family: 'Forum', cursive;
+		letter-spacing: 3px;
+		line-height: 30px;
+        width: 750px;
+    }
+
+.subheading {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/subheading_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .subheading h3 {
+        font-size: 30px;
+        font-family: 'Julius Sans One', sans-serif;
+        text-shadow: 2px 2px black;
+        letter-spacing: 25px;
+        line-height: 50px;
+        color: white;
+        padding: 10px 0;
+    }
+
+section {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.auh_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_AUH_bg.png');
+}
+
+.dxb_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_DXB_bg.png');
+}
+
+.shj_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_SHJ_bg.png');
+}
+
+.ajm_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_AJM_bg.png');
+}
+
+.uaq_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_UAQ_bg.png');
+}
+
+.rak_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_RAK_bg.png');
+}
+
+.fuj_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_FUJ_bg.png');
+}
+
+.swiper-container {
+    width: 800px;
+    height: 650px;
+    position: absolute;
+}
+
+.swiper-slide{
+    padding-bottom: 75px;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #FFD690 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #61df12 !important;
+}
