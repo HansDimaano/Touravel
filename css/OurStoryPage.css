@@ -1,12 +1,19 @@
+/* import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
 
+/* import Header and Footer css */
 @import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
 @import "RevealAnimation.css";
 
+
+/* change box-sizing of all items to border-box */
 * {
     box-sizing: border-box;
 }
 
+/* HTML body settings */
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +21,7 @@ body {
     background-color: black;
 }
 
+/* Our Story Title Container */
 .title_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/ourstory_bg.png');
     background-size: cover;
@@ -30,19 +38,22 @@ body {
     color: white;
 }
 
+/* About Touravel Image Container */
 .about_touravel {
     flex-direction: column;
     text-align: center;
     height: 250px;
     margin-bottom: 50px;
     margin-left: -50px;
-    animation: down-animation 1s ease-in-out;
+    animation: down-animation 1s ease-in-out; /* apply down animation to About Touravel Image Container */
 }
 
+/* About Touravel Image */
 .about_touravel img{
     height: 100%;
 }
 
+/* About Touravel Description */
 .title_container p {
     width: 60%;
     font-family: 'Forum', cursive;
@@ -50,9 +61,10 @@ body {
     line-height: 30px;
     text-align: left;
     text-shadow: 2px 2px black;
-    animation: down-animation 1s ease-in-out;
+    animation: down-animation 1s ease-in-out; /* apply down animation to About Touravel Description */
 }
 
+/* Down Animation for About Touravel Image and Description */
 @keyframes down-animation {
     from {
         opacity: 0;
@@ -65,6 +77,7 @@ body {
     }
 }
 
+/* Meet our team container */
 .meet_our_team {
     margin: 0;
     width: 100%;
@@ -77,6 +90,7 @@ body {
     background-color: #EFB34C;
 }
 
+/* Subheading container */
 .subheading {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/subheading_bg.png');
@@ -84,6 +98,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Subheading Title Text Settings */
 .subheading h3 {
     font-size: 30px;
     font-family: 'Julius Sans One', sans-serif;
@@ -92,6 +107,7 @@ body {
     color: white;
 }
 
+/* Meet our team description container */
 .meet_our_team_desc {
     width: 100%;
     display: flex;
@@ -99,6 +115,7 @@ body {
     background-color: #194A40;
 }
 
+/* Meet our team image */
 .meet_our_team_desc div {
     width: 60%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/ourstory_teamdesc.png');
@@ -106,6 +123,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Meet our team text */
 .meet_our_team_desc p {
     width: 40%;
     padding: 5px 50px;
@@ -116,11 +134,13 @@ body {
     line-height: 30px;
 }
 
+/* Meet our team members container */
 .meet_our_team.members {
     margin: 50px 0;
     width: 90%;
 }
 
+/* Member container  */
 .member{
     width: 100%;
     margin: 0;
@@ -131,6 +151,7 @@ body {
     align-items: center;
 }
 
+/* Member description container */
 .member_desc {
     width: 100%;
     padding: 2% 0;
@@ -142,6 +163,7 @@ body {
     z-index: 1;
 }
 
+    /* Member name */
     .member_desc h3 {
         font-size: 30px;
         font-family: 'Julius Sans One', sans-serif;
@@ -151,47 +173,63 @@ body {
         margin-bottom: 20px;
     }
 
-.member_desc p{
-    font-family: 'Forum', cursive;
-    font-size: 17px;
-    letter-spacing: 4px;
-    line-height: 25px;
-    max-width: 80%;
-    margin: 0;
-}
+    /* Member description */
+    .member_desc p{
+        font-family: 'Forum', cursive;
+        font-size: 17px;
+        letter-spacing: 4px;
+        line-height: 25px;
+        max-width: 80%;
+        margin: 0;
+    }
 
+/*
+    NOTE: 
+
+    Every member has a unique bg color for their description
+*/
+
+/* For Erlin */
 .member_desc.erlin{
     background-color: #88B07C;
 }
 
+/* For Hans */
 .member_desc.hans{
     background-color: #6E9463;
 }
 
+/* For Gerald */
 .member_desc.gerald{
     background-color: #4D7850;
 }
 
+/* For Saker */
 .member_desc.saker{
     background-color: #34584C;
 }
 
+/* For Karl */
 .member_desc.karl{
     background-color: #1C352D;
 }
 
+
+/* For Members that are floated in left */
 .member_desc.left{
     float: left;
     border-radius: 50px;
     margin-right: -80px;
 }
 
+/* For Members that are floated in right */
 .member_desc.right{
     float: right;
     border-radius: 50px;
     margin-left: -80px;
 }
 
+/* For Member image */
 .member img {
     width: 20%;
     min-height: 50%;
@@ -199,14 +237,18 @@ body {
     z-index: 2;
 }
 
+/* For Members image that are floated in left */
 .member img.left{
     float: left;
 }
 
+/* For Members image that are floated in right */
 .member img.right{
     float: right;
 }
 
+
+/* Contact Details container */
 .contact_details {
     margin: 0;
     width: 100%;
@@ -219,12 +261,14 @@ body {
     background-color: #1C352D;
 }
 
+/* Touravel Logo image */
 .contact_details img{
     margin: 75px 0;
     margin-left: -40px;
     height: 100px;
 }
 
+/* Contacts container */
 .contacts {
     width: 90%;
     background-color: white;
@@ -234,6 +278,7 @@ body {
     margin-bottom: 25px;
 }
 
+/* Lulu Islands Text */
 .contacts h3 {
     font-size: 30px;
     font-family: 'Julius Sans One', sans-serif;
@@ -244,11 +289,13 @@ body {
     z-index: 1;
 }
 
+/* Details Text Container */
 .contacts .details{
     width: 70%;
     display: flex;
 }
 
+/* Details Text */
 .contacts .details p{
     font-family: 'Forum', cursive;
     font-size: 17px;
@@ -257,10 +304,12 @@ body {
     margin-left: 40px;
 }
 
+/* Details Container */
 .details .address, .details .socials{
     width: 50%;
 }
 
+/* Contact Pin Image */
 .contacts img{
     float: right;
     margin: 30px 40px;
@@ -268,12 +317,14 @@ body {
     z-index: 3;
 }
 
+/* Interactions container */
 .interactions{
     width: 90%;
     display: flex;
     margin-bottom: 50px;
 }
 
+/* Send Email Form Container */
 .send_email{
     width: 50%;
     display: flex;
@@ -282,6 +333,7 @@ body {
     padding-right: 12.5px;
 }
 
+/* Input Settings */
 input[type=text], input[type=email], textarea {
     width: 48.5%;
     padding: 20px 10px;
@@ -292,36 +344,43 @@ input[type=text], input[type=email], textarea {
     margin-bottom: 25px;
 }
 
+/* Email input */
 input[type=email] {
     float: left;
     width: 100%;
 }
 
+/* Left Text input */
 .left_input {
     float: left;
 }
 
+/* Right Text input */
 .right_input {
     float: right;
 }
 
+/* Message input */
 textarea {
     width: 100%;
     height: 400px;
     resize: none;
 }
 
+/* Input placeholders */
 input[type=text]::placeholder, input[type=email]::placeholder, textarea::placeholder {
     font-size: 15px;
     color: black;
     letter-spacing: 4px;
 }
 
+/* Input Focus settings */
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
     outline: none;
     border: 15px solid #4D7850;
 }
 
+/* Message Sent text (hidden at first) */
 form p {
     color: #88B07C;
     font-family: 'Julius Sans One', sans-serif;
@@ -330,10 +389,12 @@ form p {
     display: none;
 }
 
+/* Message Sent text when active (shown) */
 form p.active {
     display: block;
 }
 
+/* Send Message button */
 .sendMessage_btn {
     font-size: 17px;
     font-family: 'Julius Sans One', sans-serif;
@@ -345,36 +406,398 @@ form p.active {
     border: none;
 }
 
+    /* Send Message button hover */
     .sendMessage_btn:hover {
         cursor: pointer;
         background-color: #4D7850;
     }
 
+/* Google Map container */
 .g_map {
     width: 50%;
     display: flex;
     flex-direction: column;
     padding-left: 12.5px;
+    overflow-x: hidden;
 }
 
+/* Google Map iframe */
 iframe {
     width: 100%;
-    height: 510px;
+    height: 620px;
     margin-bottom: 25px;
 }
 
+/* Social media container */
 .social_media{
     display: flex;
 }
 
+/* Social media link */
 .social_media a{
     float: left;
     width: 40px;
     margin-right: 20px;
 }
 
+/* Social media logo */
 .social_media a img{
     float: left;
     margin: 0;
     height: 40px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* 1200PX - 901PX */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /* About Touravel Description */
+    .title_container p {
+        font-size: 14px;
+    }
+
+    /* Meet our team text */
+    .meet_our_team_desc p {
+        font-size: 16px;
+    }
+
+    /* Member description */
+    .member_desc p {
+        font-size: 16px;
+        max-width: 75%;
+    }
+
+    /* Details Container */
+    .details .address, .details .socials {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    /* Details Text */
+    .contacts .details p {
+        font-size: 15px;
+        width: 300px;
+        margin-left: 0;
+    }
+}
+
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+    /* About Touravel Description */
+    .title_container p {
+        font-size: 14px;
+    }
+
+    /* Meet our team text */
+    .meet_our_team_desc p {
+        font-size: 16px;
+    }
+
+    /* Member container */
+    .member {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Member container that needs to be reversed */
+    .member.reverse{
+        flex-direction: column-reverse;
+    }
+
+    /* For Members that are floated in left and right */
+    .member_desc.left, .member_desc.right {
+        margin: 0;
+        margin-top: -40px;
+        z-index: 2;
+    }
+
+    /* Member description */
+    .member_desc p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    /* For Member image */
+    .member img {
+        width: 40%;
+        z-index: 1;
+    }
+
+    /* Details Container */
+    .details .address, .details .socials {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    /* Details Text */
+    .contacts .details p {
+        font-size: 15px;
+        width: 300px;
+        margin-left: 0;
+    }
+
+    /* Interactions container */
+    .interactions {
+        flex-wrap: wrap;
+    }
+
+    /* Send Email Form Container */
+    .send_email {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 75px;
+    }
+
+    /* Google Map container */
+    .g_map {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 800PX - 501PX */
+@media screen and (max-width: 800px) and (min-width: 501px) {
+
+    /* About Touravel Image Container */
+    .about_touravel {
+        height: auto;
+        width: 80%;
+        margin-left: -15px;
+    }
+
+    /* About Touravel Image */
+    .about_touravel img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* About Touravel Description */
+    .title_container p {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    /* Meet our team description container */
+    .meet_our_team_desc {
+        flex-wrap: wrap;
+    }
+
+    /* Meet our team image */
+    .meet_our_team_desc div {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Meet our team text */
+    .meet_our_team_desc p {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    /* Member container */
+    .member {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+        /* Member container that needs to be reversed */
+        .member.reverse {
+            flex-direction: column-reverse;
+        }
+
+    /* For Members that are floated in left and right */
+    .member_desc.left, .member_desc.right {
+        margin: 0;
+        margin-top: -40px;
+        z-index: 2;
+    }
+
+    /* Member name */
+    .member_desc h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    /* Member description */
+    .member_desc p {
+        font-size: 13px;
+        max-width: 90%;
+    }
+
+    /* For Member image */
+    .member img {
+        width: 50%;
+        z-index: 1;
+    }
+
+    /* Details Text Container */
+    .contacts .details {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* Details Container */
+    .details .address, .details .socials {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    /* Details Text */
+    .contacts .details p {
+        font-size: 15px;
+        width: 300px;
+        margin-left: 0;
+    }
+
+    /* Contact Pin Image */
+    .contacts img {
+        height: 90px;
+    }
+
+    /* Interactions container */
+    .interactions {
+        flex-wrap: wrap;
+    }
+
+    /* Send Email Form Container */
+    .send_email {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 75px;
+    }
+
+    /* Google Map container */
+    .g_map {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 500PX and below */
+@media screen and (max-width: 500px) {
+
+    /* About Touravel Image Container */
+    .about_touravel {
+        height: auto;
+        width: 80%;
+        margin-left: -15px;
+    }
+
+        /* About Touravel Image */
+        .about_touravel img {
+            width: 100%;
+            height: auto;
+        }
+
+    /* About Touravel Description */
+    .title_container p {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    /* Meet our team description container */
+    .meet_our_team_desc {
+        flex-wrap: wrap;
+    }
+
+        /* Meet our team image */
+        .meet_our_team_desc div {
+            width: 100%;
+            height: 200px;
+        }
+
+        /* Meet our team text */
+        .meet_our_team_desc p {
+            font-size: 13px;
+            width: 100%;
+        }
+
+    /* Member container */
+    .member {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+        /* Member container that needs to be reversed */
+        .member.reverse {
+            flex-direction: column-reverse;
+        }
+
+    /* For Members that are floated in left and right */
+    .member_desc.left, .member_desc.right {
+        margin: 0;
+        margin-top: -40px;
+        z-index: 2;
+    }
+
+    /* Member name */
+    .member_desc h3 {
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    /* Member description */
+    .member_desc p {
+        font-size: 12px;
+        max-width: 90%;
+    }
+
+    /* For Member image */
+    .member img {
+        width: 50%;
+        z-index: 1;
+    }
+
+    /* Details Text Container */
+    .contacts .details {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* Details Container */
+    .details .address, .details .socials {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    /* Details Text */
+    .contacts .details p {
+        font-size: 15px;
+        width: 300px;
+        margin-left: 0;
+    }
+
+    /* Contact Pin Image */
+    .contacts img {
+        height: 90px;
+    }
+
+    /* Interactions container */
+    .interactions {
+        flex-wrap: wrap;
+    }
+
+    /* Send Email Form Container */
+    .send_email {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 75px;
+    }
+
+    /* Input Settings */
+    input[type=text] {
+        width: 100%;
+    }
+
+    /* Google Map container */
+    .g_map {
+        width: 100%;
+        padding: 0;
+    }
 }
