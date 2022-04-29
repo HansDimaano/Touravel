@@ -1,19 +1,26 @@
+/* import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
 
+/* import Header and Footer css */
 @import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
 @import "RevealAnimation.css";
 
+
+/* change box-sizing of all items to border-box */
 * {
     box-sizing: border-box;
 }
 
+/* HTML body settings */
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     background-color: black;
 }
 
+/* About UAE Title Container */
 .title_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/aboutUAE_bg.png');
     background-size: cover;
@@ -32,10 +39,12 @@ body {
     color: white;
 }
 
-.title_container > *{
-    animation: start-animation 1s ease-in-out;
-}
+    /* About UAE Title Container children */
+    .title_container > * {
+        animation: start-animation 1s ease-in-out; /* apply start animation to all children of About UAE Title Container */
+    }
 
+/* Start Animation for children of About UAE Title Container */
 @keyframes start-animation {
     from {
         opacity: 0;
@@ -48,6 +57,7 @@ body {
     }
 }
 
+    /* "How well do you know" text */
     .title_container h5 {
         color: white;
         font-size: 20px;
@@ -56,6 +66,7 @@ body {
         margin: 0;
     }
 
+    /* "United Arab Emirates" text */
     .title_container h1 {
         color: white;
         font-size: 80px;
@@ -67,6 +78,7 @@ body {
         margin: 30px;
     }
 
+    /* About UAE Description */
     .title_container p {
         color: white;
 		font-size: 17px;
@@ -76,6 +88,7 @@ body {
         width: 1000px;
     }
 
+    /* Take Quiz Button */
     .title_container a {
         margin: 0;
         margin-top: 30px;
@@ -91,6 +104,7 @@ body {
         color: white;
     }
 
+    /* Take Quiz Button hover */
     .title_container a:hover {
         margin-top: 28px;
         border-color: #4D7850;
@@ -100,11 +114,13 @@ body {
         cursor: pointer;
     }
 
+    /* Take Quiz Button visited */
     .title_container a:visited {
         text-decoration: none;
         color: white;
     }
 
+/* Subheading container */
 .subheading {
     display: flex;
     width: 100%;
@@ -117,6 +133,7 @@ body {
     text-align: center;
 }
 
+    /* Subheading Title text */
     .subheading h3 {
         font-size: 30px;
         font-family: 'Julius Sans One', sans-serif;
@@ -127,6 +144,7 @@ body {
         padding: 10px 0;
     }
 
+/* UAE Facts container */
 .UAE_facts {
     display: flex;
     flex-direction: column;
@@ -136,12 +154,14 @@ body {
     padding: 30px 0;
 }
 
+    /* "Did you know?" image */
     .UAE_facts img {
         width: 900px;
         height: auto;
         margin-bottom: 50px;
     }
 
+/* National Symbol container */
 .national {
     display: flex;
     border: 7px solid #9D432A;
@@ -150,16 +170,19 @@ body {
     margin-bottom: 70px;
 }
 
+/* National Symbol container floated left */
 .national.left{
     flex-direction: row;
     text-align: left;
 }
 
+/* National Symbol container floated right */
 .national.right{
     flex-direction: row-reverse;
     text-align: right;
 }
 
+/* National Symbol image container */
 .img_wrap {
     display: flex;
     justify-content: center;
@@ -169,11 +192,13 @@ body {
     margin: -1px;
 }
 
+/* National Symbol image */
 .img_wrap img{
     margin: 50px 0;
     width: 80%;
 }
 
+/* National Symbol Description container */
 .national_desc {
     display: flex;
     flex-direction: column;
@@ -185,6 +210,7 @@ body {
     background-color: #c99d53;
 }
 
+    /* National Symbol Title */
     .national_desc h3 {
         font-size: 40px;
         font-family: 'Julius Sans One', sans-serif;
@@ -193,6 +219,7 @@ body {
         color: #9D432A;
     }
 
+    /* National Symbol Description */
     .national_desc p {
         font-size: 20px;
         font-family: 'Forum', cursive;
@@ -202,30 +229,51 @@ body {
         color: #9D432A;
     }
 
+/* Article container */
 .article {
     display: flex;
     justify-content: center;
     padding: 30px 0;
-    height: 500px;
+    min-height: 300px;
+    height: auto;
 }
 
-.article img {
-    width: 40%;
-}
+    /* Article floated left */
+    .article.left {
+        background-color: #9D432A;
+        flex-direction: row;
+    }
 
+    /* Article floated right */
+    .article.right {
+        background-color: #5E200F;
+        flex-direction: row-reverse;
+    }
+
+    /* Article image */
+    .article img {
+        width: 40%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Article Text container */
     .article .text {
         width: 40%;
         padding: 20px 0;
     }
 
+    /* Article container floated left Text container */
     .article.left .text{
         margin-right: 80px;
     }
 
+    /* Article container floated right Text container */
     .article.right .text {
         margin-left: 80px;
     }
 
+    /* Article Text Title */
     .article .text h1 {
 		margin-top: 0;
 		color: white;
@@ -235,6 +283,7 @@ body {
 		text-shadow: 2px 2px black;
 	}
 
+    /* Article Text Description */
     .article .text p {
 		color: white;
 		font-size: 17px;
@@ -244,6 +293,7 @@ body {
 		margin-bottom: 50px;
 	}
 
+    /* Article Visit Article Button */
     .article .text a {
 		color: black;
 		background-color: #EFB34C;
@@ -255,24 +305,399 @@ body {
         text-decoration: none;
 	}
 
+    /* Article floated left Visit Article Button hover */
     .article.left .text a:hover {
         cursor: pointer;
         background-color: #5E200F;
         color: #EFB34C;
     }
 
+    /* Article floated right Visit Article Button hover */
     .article.right .text a:hover {
         cursor: pointer;
         background-color: #9D432A;
         color: #EFB34C;
     }
 
-    .article.left {
-        background-color: #9D432A;
-        flex-direction: row;
+
+
+
+
+/* MEDIA QUERIES */
+
+/* 1200PX - 901PX */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 60px;
+        letter-spacing: 10px;
+        line-height: 100px;
+        width: 70%;
     }
 
-    .article.right {
-        background-color: #5E200F;
-        flex-direction: row-reverse;
+    /* About UAE Description */
+    .title_container p {
+        font-size: 17px;
+        width: 60%;
     }
+
+    /* Subheading Title text */
+    .subheading h3 {
+        padding: 10px 40px;
+    }
+
+    /* "Did you know?" image */
+    .UAE_facts img {
+        width: 700px;
+    }
+
+    /* National Symbol image */
+    .img_wrap img {
+        margin: 50px 0;
+        width: 80%;
+    }
+
+    /* Article Text container */
+    .article .text {
+        width: 40%;
+        padding: 20px 0;
+    }
+
+    /* Article container floated left Text container */
+    .article.left .text {
+        margin-right: 40px;
+    }
+
+    /* Article container floated right Text container */
+    .article.right .text {
+        margin-left: 40px;
+    }
+
+    /* Article Text Title */
+    .article .text h1 {
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+
+    /* Article Text Description */
+    .article .text p {
+        color: white;
+        font-size: 17px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 3px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 60px;
+        letter-spacing: 10px;
+        line-height: 100px;
+        width: 70%;
+    }
+
+    /* About UAE Description */
+    .title_container p {
+        font-size: 17px;
+        width: 60%;
+    }
+
+    /* Subheading Title text */
+    .subheading h3 {
+        padding: 10px 40px;
+    }
+
+    /* National Symbol Title */
+    .national_desc h3 {
+        font-size: 30px;
+    }
+
+    /* National Symbol Description */
+    .national_desc p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /* "Did you know?" image */
+    .UAE_facts img {
+        width: 700px;
+    }
+
+    /* National Symbol image */
+    .img_wrap img {
+        margin: 50px 0;
+        width: 80%;
+    }
+
+    /* Article Text container */
+    .article .text {
+        width: 45%;
+        padding: 20px 0;
+    }
+
+    /* Article container floated left Text container */
+    .article.left .text {
+        margin-right: 40px;
+    }
+
+    /* Article container floated right Text container */
+    .article.right .text {
+        margin-left: 40px;
+    }
+
+    /* Article Text Title */
+    .article .text h1 {
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+
+    /* Article Text Description */
+    .article .text p {
+        color: white;
+        font-size: 17px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 3px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/* 800PX - 501PX */
+@media screen and (max-width: 800px) and (min-width: 501px) {
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 60px;
+        letter-spacing: 10px;
+        line-height: 100px;
+        width: 70%;
+    }
+
+    /* About UAE Description */
+    .title_container p {
+        font-size: 17px;
+        width: 60%;
+    }
+
+    /* Subheading Title text */
+    .subheading h3 {
+        font-size: 24px;
+        padding: 10px 40px;
+    }
+
+    /* National Symbol container */
+    .national {
+        flex-wrap: wrap;
+    }
+
+    /* National Symbol Description container */
+    .national_desc {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* National Symbol Title */
+    .national_desc h3 {
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    /* National Symbol Description */
+    .national_desc p {
+        font-size: 13px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    /* "Did you know?" image */
+    .UAE_facts img {
+        width: 80%;
+    }
+
+    /* National Symbol image container */
+    .img_wrap {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* National Symbol image */
+    .img_wrap img {
+        margin: 50px 0;
+        width: 30%;
+    }
+
+    /* Article container */
+    .article {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+        /* Article floated left and right */
+        .article.left, .article.right {
+            flex-direction: column-reverse;
+        }
+
+    /* Article Text container */
+    .article .text {
+        width: 100%;  
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Article container floated left and right Text container */
+    .article.left .text, .article.right .text {
+        margin: 0;
+    }
+
+    /* Article Text Title */
+    .article .text h1 {
+        font-size: 30px;
+        letter-spacing: 10px;
+        padding: 0 40px;
+    }
+
+    /* Article Text Description */
+    .article .text p {
+        color: white;
+        font-size: 17px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 3px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+        /* Article image */
+        .article img {
+            width: 50%;
+        }
+}
+
+/* 500PX and below */
+@media screen and (max-width: 500px) {
+
+    /* "How well do you know" text */
+    .title_container h5 {
+        font-size: 14px;
+    }
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 30px;
+        letter-spacing: 10px;
+        line-height: 50px;
+        width: 80%;
+    }
+
+    /* About UAE Description */
+    .title_container p {
+        font-size: 12px;
+        width: 60%;
+    }
+
+    /* Take Quiz Button */
+    .title_container a {
+        font-size: 13px;
+    }
+
+    /* Subheading Title text */
+    .subheading h3 {
+        font-size: 17px;
+        letter-spacing: 10px;
+        padding: 10px 40px;
+    }
+
+    /* National Symbol container */
+    .national {
+        flex-wrap: wrap;
+    }
+
+    /* National Symbol Description container */
+    .national_desc {
+        width: 100%;
+        margin: 0;
+    }
+
+        /* National Symbol Title */
+        .national_desc h3 {
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        /* National Symbol Description */
+        .national_desc p {
+            font-size: 12px;
+            line-height: 25px;
+            text-align: left;
+        }
+
+    /* "Did you know?" image */
+    .UAE_facts img {
+        width: 80%;
+    }
+
+    /* National Symbol image container */
+    .img_wrap {
+        width: 100%;
+        margin: 0;
+    }
+
+        /* National Symbol image */
+        .img_wrap img {
+            margin: 50px 0;
+            width: 30%;
+        }
+
+    /* Article container */
+    .article {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+        /* Article floated left and right */
+        .article.left, .article.right {
+            flex-direction: column-reverse;
+        }
+
+        /* Article Text container */
+        .article .text {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Article container floated left and right Text container */
+        .article.left .text, .article.right .text {
+            margin: 0;
+        }
+
+        /* Article Text Title */
+        .article .text h1 {
+            font-size: 20px;
+            letter-spacing: 10px;
+            padding: 0 20px;
+        }
+
+        /* Article Text Description */
+        .article .text p {
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        /* Article Visit Article Button */
+        .article .text a {
+            font-size: 13px;
+        }
+
+        /* Article image */
+        .article img {
+            width: 60%;
+        }
+}
