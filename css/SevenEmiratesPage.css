@@ -1,12 +1,19 @@
+/* import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
 
+/* import Header and Footer css */
 @import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
 @import "RevealAnimation.css";
 
+
+/* change box-sizing of all items to border-box */
 * {
 	box-sizing: border-box;
 }
 
+/* HTML body settings */
 body {
 	margin: 0;
 	padding: 0;
@@ -14,6 +21,7 @@ body {
 	background-color: black;
 }
 
+/* Seven Emirates Title Container */
 .title_container {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/sevenemirates_bg.png');
 	background-size: cover;
@@ -30,12 +38,14 @@ body {
 	color: white;
 }
 
-	.title_container img{
+	/* UAE Map Image */
+	.title_container img {
 		width: 45%;
 		margin-right: 40px;
-		animation: start-animation 1s ease-in-out;
+		animation: start-animation 1s ease-in-out; /* apply start animation to UAE Map Image */
 	}
 
+/* About UAE Container */
 .aboutUAE {
 	display: flex;
 	justify-content: center;
@@ -47,9 +57,10 @@ body {
 	padding: 10px 30px;
 	background-color: black;
 	text-align: center;
-	animation: start-animation 1s ease-in-out;
+	animation: start-animation 1s ease-in-out; /* apply start animation to About UAE Container */
 }
 
+/* Start Animation for UAE Map and About UAE Container */
 @keyframes start-animation{
 	from{
 		opacity: 0;
@@ -62,6 +73,7 @@ body {
 	}
 }
 
+	 /* About UAE Title */
 	.aboutUAE h3 {
 		color: white;
 		font-size: 50px;
@@ -72,6 +84,7 @@ body {
 		margin-bottom: 10px;
 	}
 
+	 /* About UAE Description */
 	.aboutUAE p {
 		color: white;
 		font-size: 17px;
@@ -80,6 +93,7 @@ body {
 		line-height: 30px;
 	}
 
+/* Emirate Container */
 .emirate{
 	display: flex;
 	justify-content: center;
@@ -88,12 +102,14 @@ body {
 	height: 500px;
 }
 
+	/* Emirate Text Container */
 	.emirate .text {
 		width: 40%;
 		margin: 80px;
 		padding-bottom: 20px;
 	}
 
+	/* Emirate Text Name */
 	.emirate .text h1 {
 		margin-top: 0;
 		color: white;
@@ -103,6 +119,7 @@ body {
 		text-shadow: 2px 2px black;
 	}
 
+	/* Emirate Text Description */
 	.emirate .text p {
 		color: white;
 		font-size: 17px;
@@ -112,6 +129,7 @@ body {
 		margin-bottom: 50px;
 	}
 
+	/* Emirate Explore Button */
 	.emirate .text a {
 		color: black;
 		background-color: #EFB34C;
@@ -123,30 +141,305 @@ body {
 		text-decoration: none;
 	}
 
-	.emirate.left .text a:hover {
-		cursor: pointer;
-		background-color: #1C352D;
-		color: #EFB34C;
-	}
+	/*
+		Note: 
 
-	.emirate.right .text a:hover {
-		cursor: pointer;
-		background-color: #5B9456;
-		color: #EFB34C;
-	}
+		Emirate has two classes, it's either the text is on left or right.
 
-	.emirate img{
-		width: 40%;
-	}
+		This is done through flex direction: row or row-reverse.
 
+	*/
+
+	/* Emirate Left Settings */
 	.emirate.left {
 		background-color: #5B9456;
 		text-align: right;
 		flex-direction: row;
 	}
 
+	/* Emirate Right Settings */
 	.emirate.right {
 		background-color: #1C352D;
 		text-align: left;
 		flex-direction: row-reverse;
 	}
+
+	/* Emirate Left Button Hover */
+	.emirate.left .text a:hover {
+		cursor: pointer;
+		background-color: #1C352D;
+		color: #EFB34C;
+	}
+
+	/* Emirate Right Button Hover */
+	.emirate.right .text a:hover {
+		cursor: pointer;
+		background-color: #5B9456;
+		color: #EFB34C;
+	}
+
+	/* Emirate Image */
+	.emirate img{
+		width: 40%;
+	}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* 1200PX - 901PX */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+	/* About UAE Title */
+	.aboutUAE h3 {
+		font-size: 35px;
+		letter-spacing: 10px;
+		line-height: 70px;
+	}
+
+	/* About UAE Description */
+	.aboutUAE p {
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 30px;
+	}
+
+	/* Emirate Text Name */
+	.emirate .text h1 {
+		font-size: 35px;
+		letter-spacing: 30px;
+	}
+
+	/* Emirate Text Description */
+	.emirate .text p {
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 25px;
+	}
+}
+
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+	/* Seven Emirates Title Container */
+	.title_container {
+		flex-wrap: wrap;
+		padding: 175px 10% 100px 10%;
+	}
+
+		/* UAE Map Image */
+		.title_container img {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+	/* About UAE Container */
+	.aboutUAE {
+		width: 100%;
+		min-height: 300px;
+	}
+
+	/* About UAE Title */
+	.aboutUAE h3 {
+		font-size: 35px;
+		letter-spacing: 10px;
+		line-height: 70px;
+	}
+
+	/* About UAE Description */
+	.aboutUAE p {
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 30px;
+	}
+
+	/* Emirate Container */
+	.emirate {
+		min-height: 300px;
+		height: auto;
+	}
+
+	/* Emirate Text Container */
+	.emirate .text {
+		width: 40%;
+		margin: 0 30px;
+	}
+
+	/* Emirate Text Name */
+	.emirate .text h1 {
+		font-size: 25px;
+		letter-spacing: 30px;
+	}
+
+	/* Emirate Text Description */
+	.emirate .text p {
+		font-size: 12px;
+		letter-spacing: 3px;
+		line-height: 20px;
+		margin-bottom: 30px;
+	}
+
+	/* Emirate Image */
+	.emirate img {
+		width: 40%;
+	}
+}
+
+/* 800PX - 501PX */
+@media screen and (max-width: 800px) and (min-width: 501px) {
+
+	/* Seven Emirates Title Container */
+	.title_container {
+		flex-wrap: wrap;
+		padding: 175px 10% 100px 10%;
+	}
+
+		/* UAE Map Image */
+		.title_container img {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+	/* About UAE Container */
+	.aboutUAE {
+		width: 100%;
+		min-height: 300px;
+	}
+
+		/* About UAE Title */
+		.aboutUAE h3 {
+			font-size: 35px;
+			letter-spacing: 10px;
+			line-height: 70px;
+		}
+
+		/* About UAE Description */
+		.aboutUAE p {
+			font-size: 14px;
+			letter-spacing: 3px;
+			line-height: 30px;
+		}
+
+	/* Emirate Container */
+	.emirate {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+		/* Emirate Left and Right Settings */
+		.emirate.left, .emirate.right {
+			text-align: center;
+			flex-direction: column-reverse;
+		}
+
+		/* Emirate Text Container */
+		.emirate .text {
+			width: 90%;
+			margin: 0;
+		}
+
+			/* Emirate Text Name */
+			.emirate .text h1 {
+				font-size: 25px;
+				letter-spacing: 30px;
+			}
+
+			/* Emirate Text Description */
+			.emirate .text p {
+				font-size: 12px;
+				letter-spacing: 3px;
+				line-height: 20px;
+				margin-bottom: 30px;
+			}
+
+			/* Emirate Explore Button */
+			.emirate .text a {
+				font-size: 13px;
+			}
+
+		/* Emirate Image */
+		.emirate img {
+			width: 60%;
+			margin-bottom: 50px;
+		}
+}
+
+/* 500PX and below */
+@media screen and (max-width: 500px) {
+
+	/* Seven Emirates Title Container */
+	.title_container {
+		flex-wrap: wrap;
+		padding: 175px 10% 100px 10%;
+	}
+
+		/* UAE Map Image */
+		.title_container img {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+	/* About UAE Container */
+	.aboutUAE {
+		width: 100%;
+		min-height: 300px;
+	}
+
+		/* About UAE Title */
+		.aboutUAE h3 {
+			font-size: 25px;
+			letter-spacing: 10px;
+			line-height: 40px;
+		}
+
+		/* About UAE Description */
+		.aboutUAE p {
+			font-size: 12px;
+			letter-spacing: 3px;
+			line-height: 25px;
+		}
+
+	/* Emirate Container */
+	.emirate {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+		/* Emirate Left and Right Settings */
+		.emirate.left, .emirate.right {
+			text-align: center;
+			flex-direction: column-reverse;
+		}
+
+		/* Emirate Text Container */
+		.emirate .text {
+			width: 90%;
+			margin: 0;
+		}
+
+			/* Emirate Text Name */
+			.emirate .text h1 {
+				font-size: 20px;
+				letter-spacing: 30px;
+			}
+
+			/* Emirate Text Description */
+			.emirate .text p {
+				font-size: 11px;
+				letter-spacing: 3px;
+				line-height: 20px;
+				margin-bottom: 30px;
+			}
+
+			/* Emirate Explore Button */
+			.emirate .text a {
+				font-size: 13px;
+			}
+
+		/* Emirate Image */
+		.emirate img {
+			width: 60%;
+			margin-bottom: 50px;
+		}
+}
