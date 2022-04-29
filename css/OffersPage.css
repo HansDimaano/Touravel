@@ -1,12 +1,19 @@
+/* import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&display=swap');
 
+/* import Header and Footer css */
 @import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
 @import "RevealAnimation.css";
 
+
+/* change box-sizing of all items to border-box */
 * {
     box-sizing: border-box;
 }
 
+/* HTML body settings */
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +21,7 @@ body {
     background-color: black;
 }
 
+/* Offers Title Container */
 .title_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/offers_bg.png');
     background-size: cover;
@@ -32,10 +40,12 @@ body {
     color: white;
 }
 
+    /* Offers Title Container children */
     .title_container > * {
-        animation: start-animation 1s ease-in-out;
+        animation: start-animation 1s ease-in-out; /* apply start animation to all children of Offers Title Container */
     }
 
+/* Start Animation for children of Offers Title Container */
 @keyframes start-animation {
     from {
         opacity: 0;
@@ -48,14 +58,16 @@ body {
     }
 }
 
-.title_container h5 {
+    /* "Services that we offer in" text */
+    .title_container h5 {
         color: white;
         font-size: 20px;
         font-family: 'Julius Sans One', sans-serif;
         letter-spacing: 10px;
         margin: 0;
-}
+    }
 
+    /* "United Arab Emirates" text */
     .title_container h1 {
         color: white;
         font-size: 80px;
@@ -67,6 +79,7 @@ body {
         margin: 30px;
     }
 
+    /* Offers Description */
     .title_container p {
         color: white;
 		font-size: 17px;
@@ -76,6 +89,7 @@ body {
         width: 750px;
     }
 
+/* Subheading container */
 .subheading {
     display: flex;
     width: 100%;
@@ -88,6 +102,7 @@ body {
     text-align: center;
 }
 
+    /* Subheading Title text */
     .subheading h3 {
         font-size: 30px;
         font-family: 'Julius Sans One', sans-serif;
@@ -98,6 +113,7 @@ body {
         padding: 10px 0;
     }
 
+/* Emirate Offers Section */
 section {
     position: relative;
     width: 100%;
@@ -110,56 +126,216 @@ section {
     background-size: cover;
 }
 
+/*
+    NOTE:
+
+    Each emirate offers section has a unique bg image
+
+*/
+
+/* Abu Dhabi container */
 .auh_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_AUH_bg.png');
 }
 
+/* Dubai container */
 .dxb_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_DXB_bg.png');
 }
 
+/* Sharjah container */
 .shj_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_SHJ_bg.png');
 }
 
+/* Ajman container */
 .ajm_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_AJM_bg.png');
 }
 
+/* Umm Al Quwain container */
 .uaq_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_UAQ_bg.png');
 }
 
+/* Ras Al-Khaimah container */
 .rak_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_RAK_bg.png');
 }
 
+/* Fujairah container */
 .fuj_container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/Offers_FUJ_bg.png');
 }
 
+/* Swiper container */
 .swiper-container {
     width: 800px;
     height: 650px;
     position: absolute;
 }
 
+/* Swiper Slide div */
 .swiper-slide{
     padding-bottom: 75px;
 }
 
+/* Swiper Slide Image */
 .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
+/* Swiper Pagination bullets */
 .swiper-pagination-bullet {
     width: 15px !important;
     height: 15px !important;
     background-color: #FFD690 !important;
 }
 
+/* Swiper Pagination active bullet */
 .swiper-pagination-bullet-active {
     background-color: #61df12 !important;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* 1200PX - 901PX */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 60px;
+        width: 80%;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 700px;
+        height: 550px;
+    }
+}
+
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 50px;
+        line-height: 75px;
+        width: 80%;
+    }
+
+    /* Emirate Offers Section */
+    section {
+        min-height: 500px;
+        height: auto;
+        padding: 25px 0;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+/* 800PX - 501PX */
+@media screen and (max-width: 800px) and (min-width: 501px) {
+
+    /* "Services that we offer in" text */
+    .title_container h5 {
+        line-height: 30px;
+        font-size: 17px;
+    }
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 40px;
+        line-height: 75px;
+        width: 85%;
+    }
+
+    /* Offers Description */
+    .title_container p {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    /* Subheading Title text */
+    .subheading h3 {
+        font-size: 24px;
+        padding: 10px 40px;
+    }
+
+    /* Emirate Offers Section */
+    section {
+        min-height: 400px;
+        height: auto;
+        padding: 25px 0;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 500px;
+        height: 350px;
+    }
+
+    /* Swiper Pagination bullets */
+    .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
+/* 500PX and below */
+@media screen and (max-width: 500px) {
+
+    /* "Services that we offer in" text */
+    .title_container h5 {
+        line-height: 30px;
+        font-size: 17px;
+    }
+
+    /* "United Arab Emirates" text */
+    .title_container h1 {
+        font-size: 40px;
+        line-height: 75px;
+        width: 85%;
+    }
+
+    /* Offers Description */
+    .title_container p {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    /* Subheading Title text */
+    .subheading h3 {
+        font-size: 17px;
+        letter-spacing: 10px;
+        padding: 10px 40px;
+    }
+
+    /* Emirate Offers Section */
+    section {
+        min-height: 400px;
+        height: auto;
+        padding: 25px 0;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 475px;
+        height: 325px;
+    }
+
+    /* Swiper Pagination bullets */
+    .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+    }
 }
