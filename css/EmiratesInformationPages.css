@@ -1,0 +1,1151 @@
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&family=Istok+Web:wght@700&display=swap');
+
+/* import Header and Footer css */
+@import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
+@import "RevealAnimation.css";
+
+
+/* change box-sizing of all items to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* HTML body settings */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* Emirates Info Title Container */
+.title_container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 175px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+    /* Emirates Info Title Container children */
+    .title_container > * {
+        animation: start-animation 1s ease-in-out; /* apply start animation to all children of Emirates Info Title Container */
+    }
+
+/* Start Animation for children of Emirates Info Title Container */
+@keyframes start-animation {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* About Emirate Container */
+.aboutEmirate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 500px;
+    border-radius: 40px;
+    padding: 10px 30px;
+    text-align: left;
+    margin-right: 30px;
+}
+
+    /* About Emirate Title */
+    .aboutEmirate h1 {
+        color: white;
+        font-size: 90px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: white 7px;
+        letter-spacing: 10px;
+        line-height: 120px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    /* About Emirate Description */
+    .aboutEmirate p {
+        color: white;
+        font-size: 14px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 3px;
+        line-height: 30px;
+    }
+
+/* Emirate Google Map */
+iframe {
+    width: 40%;
+    border: 20px solid #213422;
+}
+
+/* Sections */
+section {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+/* Slanted Div BG */
+.slanted_bg {
+    display: flex;
+    width: 110%;
+    height: 900px;
+    margin-left: -5%;
+    margin-top: -75px;
+    overflow: hidden;
+    position: absolute;
+}
+
+    /* Slanted Div BG with Light Green bg */
+    .slanted_bg.light {
+        background-color: #428C74;
+    }
+
+    /* Slanted Div BG with Dark Green bg */
+    .slanted_bg.dark {
+        background-color: #2B5044;
+    }
+
+/* Sheikh Bio Text */
+.sheikh_bio {
+    margin-left: 8%;
+    align-items: center;
+    text-align: center;
+    max-width: 85%;
+    max-height: 100px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Forum', cursive;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+/* Sheikh Container */
+.sheikh {
+    height: auto;
+    min-height: 700px;
+    position: relative;
+    z-index: 3;
+}
+
+    /* Sheikh Image */
+    .sheikh img {
+        margin-left: 40px;
+        width: auto;
+        max-width: 40%;
+        height: auto;
+        max-height: 700px;
+        position: absolute;
+        bottom: 0;
+    }
+
+/* Sheikh Description Container */
+.sheikh_desc{
+    position: absolute;
+    top: 10%;
+    right: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+    /* Sheikh Name */
+    .sheikh_desc h1 {
+        color: white;
+        font-size: 40px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: white 2px;
+        letter-spacing: 10px;
+        line-height: 70px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    /* Sheikh Quote */
+    .sheikh_desc p {
+        color: white;
+        font-size: 19px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 3px;
+        line-height: 30px;
+        margin: 0 30px;
+    }
+
+/* Top 3 Tourist Spots Text Container */
+.top3_touristspots {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+    /* Top 3 Tourist Spots Children (text) */
+    .top3_touristspots > * {
+        color: white;
+        font-family: 'Julius Sans One', sans-serif;
+        letter-spacing: 10px;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    /* "TOP" text */
+    .top3_touristspots h3 {
+        font-size: 110px;
+        -webkit-text-stroke: white 7px;
+        text-shadow: 10px 10px black;
+    }
+
+    /* "3" text */
+    .top3_touristspots h1 {
+        color: #EFB34C;
+        font-size: 250px;
+        -webkit-text-stroke: #EFB34C 7px;
+        text-shadow: 10px 10px black;
+    }
+
+    /* "TOURIST SPOTS IN [emirate]" text */
+    .top3_touristspots p {
+        font-size: 40px;
+        -webkit-text-stroke: white 2px;        
+    }
+
+/* Tourist Spot Container */
+.tourist_spot {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    position: relative;
+}
+
+    /* Tourist Spot Container floated in left */
+    .tourist_spot.left{
+        flex-direction: row;
+    }
+
+    /* Tourist Spot Container floated in right */
+    .tourist_spot.right {
+        flex-direction: row-reverse;
+    }
+
+/* Tourist Spot Image */
+.tourist_spot img {
+    width: 55%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: -25px;
+    bottom: 0;
+}
+
+    /* Tourist Spot Image floated in left */
+    .tourist_spot.left img {
+        left: 0;
+        object-position: 0 100%;
+    }
+
+    /* Tourist Spot Image floated in right */
+    .tourist_spot.right img {
+        right: 0;
+        object-position: 100% 100%;
+    }
+
+/* Tourist Spot Description Container */
+.tourist_spot_desc {
+    width: 40%;
+    height: auto;
+    margin-top: 30px;
+    padding: 0 30px;
+    position: relative;
+}
+
+    /* Tourist Spot Description text */
+    .tourist_spot_desc p {
+        color: white;
+        font-size: 17px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 3px;
+        line-height: 30px;
+        margin-bottom: 80px;
+    }
+
+    /* Tourist Spot Description text floated in left */
+    .tourist_spot_desc.left p {
+        text-align: right;
+    }
+
+    /* Tourist Spot Description text floated in right */
+    .tourist_spot_desc.right p {
+        text-align: left;
+    }
+
+/* Check Out button */
+.tourist_spot_desc a {
+    color: white;
+    background-color: #EFB34C;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+    -webkit-text-stroke: white 3px;
+    letter-spacing: 4px;
+    position: absolute;
+    text-decoration: none;
+}
+
+    /* Check Out button hover */
+    .tourist_spot_desc a:hover {
+        cursor: pointer;
+        background-color: #845f1e;
+    }
+
+    /* Check Out button floated in left */
+    .tourist_spot_desc.left a {
+        right: 30px;
+    }
+
+    /* Check Out button floated in right */
+    .tourist_spot_desc.right a {
+        left: 30px;
+    }
+
+/* Top 3 Hotels Text Container */
+.top3_hotels {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 13;
+}
+
+    /* Top 3 Hotels Text Container Children (text) */
+    .top3_hotels > * {
+        color: white;
+        font-family: 'Julius Sans One', sans-serif;
+        letter-spacing: 15px;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    /* "[emirate]'S TOP" and "HOTELS" text */
+    .top3_hotels h3 {
+        font-size: 80px;
+        -webkit-text-stroke: white 7px;
+        text-shadow: 7px 7px black;
+    }
+
+    /* "3" text */
+    .top3_hotels h1 {
+        color: #EFB34C;
+        font-size: 225px;
+        -webkit-text-stroke: #EFB34C 7px;
+        text-shadow: 7px 7px black;
+        letter-spacing: 20px;
+    }
+
+/* Hotel Swiper Container */
+.hotels_swiper {
+    width: 100%;
+    height: 700px;
+    background-color: #428C74;
+    z-index: 14;
+}
+
+/* Swiper container */
+.swiper-container {
+    width: 1000px;
+    height: 650px;
+    position: absolute;
+    z-index: 15;
+}
+
+    /* Swiper Slide Image */
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+/* Swiper Pagination bullets */
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: black !important;
+}
+
+/* Swiper Pagination active bullet */
+.swiper-pagination-bullet-active {
+    background-color: #EFB34C !important;
+}
+
+/* Number "ONE", "TWO", and "THREE" text */
+.swiper-slide h1 {
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 90px;
+    -webkit-text-stroke: white 7px;
+    text-shadow: 7px 7px black;
+    text-align: center;
+    letter-spacing: 15px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+/* Hotel Container */
+.hotel {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hotel Image */
+.hotel img {
+    width: 50%;
+    height: auto;
+}
+
+/* Hotel Description Container */
+.hotel_desc {
+    padding: 0 50px 0 25px;
+}
+
+    /* Hotel Description text */
+    .hotel_desc p {
+        color: white;
+        font-size: 17px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 3px;
+        line-height: 28px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    /* Book Now button */
+    .hotel_desc a {
+        padding: 7px 12px;
+        border: 3px solid white;
+        border-radius: 10px;
+        box-shadow: 1px 1px black;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Book Now button hover and visited settings */
+    .hotel_desc a:hover{
+        border-color: #EFB34C;
+        background-color: #EFB34C;
+        cursor: pointer;
+    }
+
+     .hotel_desc a:visited{
+         text-decoration: none;
+         color: white;
+     }
+
+
+
+/* MEDIA QUERIES */
+
+/* 1200PX - 901PX */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /* Emirate Google Map */
+    iframe {
+        border: 10px solid #213422;
+    }
+
+    /* Slanted Div BG */
+    .slanted_bg {
+        width: 120%;
+        margin-left: -6.5%;
+    }
+
+    /* Sheikh Bio Text */
+    .sheikh_bio {
+        margin-left: 9%;
+        max-width: 80%;
+    }
+
+    /* Sheikh Image */
+    .sheikh img {
+        bottom: 20px;
+    }
+
+    /* Sheikh Name */
+    .sheikh_desc h1 {
+        font-size: 30px;
+    }
+
+    /* Sheikh Quote */
+    .sheikh_desc p {
+        font-size: 15px;
+    }
+
+    /* "TOP" text */
+    .top3_touristspots h3 {
+        font-size: 90px;
+    }
+
+    /* "3" text */
+    .top3_touristspots h1 {
+        font-size: 210px;
+    }
+
+    /* "TOURIST SPOTS IN [emirate]" text */
+    .top3_touristspots p {
+        font-size: 30px;
+    }
+
+    /* Tourist Spot Description text */
+    .tourist_spot_desc p {
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 40px;
+    }
+
+    /* Check Out button */
+    .tourist_spot_desc a {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    /* "[emirate]'S TOP" and "HOTELS" text */
+    .top3_hotels h3 {
+        text-align: right;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 875px;
+    }
+
+    /* Hotel Description text */
+    .hotel_desc p {
+        font-size: 14px;
+    }
+}
+
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+    /* Emirates Info Title Container */
+    .title_container {
+        flex-direction: column;
+    }
+
+    /* About Emirate Container */
+    .aboutEmirate {
+        width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Emirate Google Map */
+    iframe {
+        width: 80%;
+        border: 10px solid #213422;
+    }
+
+    /* Slanted Div BG */
+    .slanted_bg {
+        width: 120%;
+        margin-left: -7%;
+    }
+
+    /* Sheikh Bio Text */
+    .sheikh_bio {
+        margin-left: 10%;
+        max-width: 80%;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    /* Sheikh Image */
+    .sheikh img {
+        bottom: 40px;
+    }
+
+    /* Sheikh Name */
+    .sheikh_desc h1 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    /* Sheikh Quote */
+    .sheikh_desc p {
+        font-size: 14px;
+    }
+
+    /* "TOP" text */
+    .top3_touristspots h3 {
+        font-size: 90px;
+    }
+
+    /* "3" text */
+    .top3_touristspots h1 {
+        font-size: 210px;
+    }
+
+    /* "TOURIST SPOTS IN [emirate]" text */
+    .top3_touristspots p {
+        font-size: 30px;
+    }
+
+    /* Tourist Spot Container floated in left and right*/
+    .tourist_spot.left, .tourist_spot.right {
+        flex-direction: column-reverse;
+        height: 575px;
+    }
+
+    /* Tourist Spot Image */
+    .tourist_spot img {
+        position: absolute;
+    }
+
+    /* Tourist Spot Description Container */
+    .tourist_spot_desc {
+        width: 100%;
+        margin: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    /* Tourist Spot Description text */
+    .tourist_spot_desc p {
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 40px;
+    }
+
+    /* Tourist Spot Description text floated in left */
+    .tourist_spot_desc.left p {
+        text-align: left;
+    }
+
+    /* Tourist Spot Description text floated in right */
+    .tourist_spot_desc.right p {
+        text-align: right;
+    }
+
+    /* Check Out button */
+    .tourist_spot_desc a {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    /* Check Out button floated in left */
+    .tourist_spot_desc.left a {
+        left: 30px;
+        right: auto;
+    }
+
+    /* Check Out button floated in right */
+    .tourist_spot_desc.right a {
+        right: 30px;
+        left: auto;
+    }
+
+    /* "[emirate]'S TOP" and "HOTELS" text */
+    .top3_hotels h3 {
+        font-size: 60px;
+        text-align: right;
+        width: min-content;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 775px;
+    }
+
+    /* Hotel Description text */
+    .hotel_desc p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/* 800PX - 501PX */
+@media screen and (max-width: 800px) and (min-width: 601px) {
+
+    /* Emirates Info Title Container */
+    .title_container {
+        flex-direction: column;
+    }
+
+    /* About Emirate Container */
+    .aboutEmirate {
+        width: 90%;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* About Emirate Title */
+    .aboutEmirate h1 {
+        font-size: 70px;
+    }
+
+    /* About Emirate Description */
+    .aboutEmirate p {
+        font-size: 13px;
+        line-height: 27px;
+    }
+
+    /* Emirate Google Map */
+    iframe {
+        width: 80%;
+        border: 10px solid #213422;
+    }
+
+    /* Slanted Div BG */
+    .slanted_bg {
+        width: 130%;
+        height: 950px;
+        margin-left: -13.5%;
+    }
+
+    /* Sheikh Bio Text */
+    .sheikh_bio {
+        margin-left: 16%;
+        max-width: 70%;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    /* Sheikh Container */
+    .sheikh {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 850px;
+        padding-top: 40px;
+    }
+
+    /* Sheikh Image and Sheikh Description Container */
+    .sheikh img, .sheikh_desc {
+        position: initial;
+        margin: 0;
+    }
+
+    /* Sheikh Description Container */
+    .sheikh_desc {
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    /* Sheikh Name */
+    .sheikh_desc h1 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    /* Sheikh Quote */
+    .sheikh_desc p {
+        font-size: 14px;
+    }
+
+    /* "TOP" text */
+    .top3_touristspots h3 {
+        font-size: 90px;
+    }
+
+    /* "3" text */
+    .top3_touristspots h1 {
+        font-size: 210px;
+    }
+
+    /* "TOURIST SPOTS IN [emirate]" text */
+    .top3_touristspots p {
+        font-size: 30px;
+        line-height: 60px;
+        max-width: 575px;
+    }
+
+    /* Tourist Spot Container floated in left and right*/
+    .tourist_spot.left, .tourist_spot.right {
+        flex-direction: column-reverse;
+        height: 625px;
+    }
+
+    /* Tourist Spot Image */
+    .tourist_spot img {
+        position: absolute;
+        margin: 0;
+        width: 65%;
+    }
+
+    /* Tourist Spot Description Container */
+    .tourist_spot_desc {
+        width: 100%;
+        margin: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    /* Tourist Spot Description text */
+    .tourist_spot_desc p {
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 40px;
+    }
+
+    /* Tourist Spot Description text floated in left */
+    .tourist_spot_desc.left p {
+        text-align: left;
+    }
+
+    /* Tourist Spot Description text floated in right */
+    .tourist_spot_desc.right p {
+        text-align: right;
+    }
+
+    /* Check Out button */
+    .tourist_spot_desc a {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    /* Check Out button floated in left */
+    .tourist_spot_desc.left a {
+        left: 30px;
+        right: auto;
+    }
+
+    /* Check Out button floated in right */
+    .tourist_spot_desc.right a {
+        right: 30px;
+        left: auto;
+    }
+
+    /* Top 3 Hotels Text Container Children (text) */
+    .top3_hotels > * {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* "[emirate]'S TOP" and "HOTELS" text */
+    .top3_hotels h3 {
+        font-size: 40px;
+        -webkit-text-stroke: white 4px;
+        text-align: right;
+        width: min-content;
+        text-shadow: 5px 5px black;
+    }
+
+    /* "3" text */
+    .top3_hotels h1 {
+        font-size: 150px;
+    }
+
+    /* Hotel Swiper Container */
+    .hotels_swiper {
+        height: 950px;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 575px;
+        height: 800px;
+    }
+
+    /* Number "ONE", "TWO", and "THREE" text */
+    .swiper-slide h1 {
+        font-size: 60px;
+    }
+
+    /* Hotel Container */
+    .hotel {
+        flex-direction: column;
+        height: 500px
+    }
+
+        /* Hotel Image */
+        .hotel img {
+            width: 60%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+    /* Hotel Description Container */
+    .hotel_desc {
+        width: 100%;
+        padding: 0 50px 0 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Hotel Description text */
+    .hotel_desc p {
+        text-align: center;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /* Book Now button */
+    .hotel_desc a {
+        margin: 0 auto;
+    }
+}
+
+/* 600PX and below */
+@media screen and (max-width: 600px) {
+
+    /* Emirates Info Title Container */
+    .title_container {
+        flex-direction: column;
+    }
+
+    /* About Emirate Container */
+    .aboutEmirate {
+        width: 90%;
+        text-align: center;
+        margin: 0;
+    }
+
+        /* About Emirate Title */
+        .aboutEmirate h1 {
+            font-size: 70px;
+        }
+
+        /* About Emirate Description */
+        .aboutEmirate p {
+            font-size: 13px;
+            line-height: 27px;
+        }
+
+    /* Emirate Google Map */
+    iframe {
+        width: 80%;
+        border: 10px solid #213422;
+    }
+
+    /* Slanted Div BG */
+    .slanted_bg {
+        width: 130%;
+        height: 1050px;
+        margin-left: -13.5%;
+    }
+
+    /* Sheikh Bio Text */
+    .sheikh_bio {
+        margin-left: 18%;
+        max-width: 70%;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    /* Sheikh Container */
+    .sheikh {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 950px;
+        padding-top: 40px;
+    }
+
+        /* Sheikh Image and Sheikh Description Container */
+        .sheikh img, .sheikh_desc {
+            position: initial;
+            margin: 0;
+        }
+
+    /* Sheikh Description Container */
+    .sheikh_desc {
+        margin-top: 50px;
+        width: 80%;
+    }
+
+        /* Sheikh Name */
+        .sheikh_desc h1 {
+            font-size: 26px;
+            line-height: 35px;
+        }
+
+        /* Sheikh Quote */
+        .sheikh_desc p {
+            font-size: 14px;
+        }
+
+    /* "TOP" text */
+    .top3_touristspots h3 {
+        font-size: 90px;
+        text-shadow: 5px 5px black;
+    }
+
+    /* "3" text */
+    .top3_touristspots h1 {
+        font-size: 150px;
+        text-shadow: 5px 5px black;
+        margin-bottom: 0;
+    }
+
+    /* "TOURIST SPOTS IN [emirate]" text */
+    .top3_touristspots p {
+        font-size: 40px;
+        line-height: 60px;
+        max-width: 300px;
+    }
+
+    /* Tourist Spot Container floated in left and right*/
+    .tourist_spot.left, .tourist_spot.right {
+        flex-direction: column-reverse;
+        height: 625px;
+    }
+
+    /* Tourist Spot Image */
+    .tourist_spot img {
+        position: absolute;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 65%;
+    }
+
+    /* Tourist Spot Description Container */
+    .tourist_spot_desc {
+        width: 100%;
+        margin: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    /* Tourist Spot Description text */
+    .tourist_spot_desc p {
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 40px;
+    }
+
+    /* Tourist Spot Description text floated in left */
+    .tourist_spot_desc.left p {
+        text-align: left;
+    }
+
+    /* Tourist Spot Description text floated in right */
+    .tourist_spot_desc.right p {
+        text-align: right;
+    }
+
+    /* Check Out button */
+    .tourist_spot_desc a {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    /* Check Out button floated in left */
+    .tourist_spot_desc.left a {
+        left: 30px;
+        right: auto;
+    }
+
+    /* Check Out button floated in right */
+    .tourist_spot_desc.right a {
+        right: 30px;
+        left: auto;
+    }
+
+    /* Top 3 Hotels Text Container */
+    .top3_hotels {
+        flex-direction: column;
+    }
+
+    /* Top 3 Hotels Text Container Children (text) */
+    .top3_hotels > * {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* "[emirate]'S TOP" and "HOTELS" text */
+    .top3_hotels h3 {
+        font-size: 40px;
+        -webkit-text-stroke: white 4px;
+        text-align: center;
+        width: min-content;
+        text-shadow: 5px 5px black;
+        margin-bottom: 30px;
+    }
+
+    /* "3" text */
+    .top3_hotels h1 {
+        font-size: 150px;
+    }
+
+    /* Hotel Swiper Container */
+    .hotels_swiper {
+        height: 950px;
+    }
+
+    /* Swiper container */
+    .swiper-container {
+        width: 400px;
+        height: 800px;
+        margin-top: 50px;
+    }
+
+    /* Number "ONE", "TWO", and "THREE" text */
+    .swiper-slide h1 {
+        font-size: 60px;
+    }
+
+    /* Hotel Container */
+    .hotel {
+        flex-direction: column;
+        height: 500px
+    }
+
+        /* Hotel Image */
+        .hotel img {
+            width: 60%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+    /* Hotel Description Container */
+    .hotel_desc {
+        width: 100%;
+        padding: 0 50px 0 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        /* Hotel Description text */
+        .hotel_desc p {
+            text-align: center;
+            font-size: 13px;
+            line-height: 22px;
+        }
+
+        /* Book Now button */
+        .hotel_desc a {
+            margin: 0 auto;
+        }
+}
