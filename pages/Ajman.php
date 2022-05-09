@@ -262,7 +262,7 @@ include '../data/codes.php'; // include the codes.php data
                             </p>
 
                             <!-- Book Now Button -->
-                            <a href="https://www.booking.com/hotel/ae/the-oberoi-beach-resort.html?aid=839822;label=booking-68ee6b033e5544e19b00ec9067498d87" target="_blank">
+                            <a href="http://www.booking.com/Share-nIGatdR" target="_blank">
                             BOOK NOW
                             </a>
                         </div>
