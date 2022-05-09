@@ -478,6 +478,11 @@ section {
 /* 1200PX - 901PX */
 @media screen and (max-width: 1200px) and (min-width: 901px) {
 
+    /* About Emirate Title */
+    .aboutEmirate h1 {
+        font-size: 65px;
+    }
+
     /* Emirate Google Map */
     iframe {
         border: 10px solid #213422;
