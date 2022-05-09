@@ -79,13 +79,13 @@ $footer_general = '<footer>
                             </div>
                             <div class="explore">
                                 <h3>EXPLORE</h3>
-                                <a>Abu Dhabi</a>
-                                <a>Dubai</a>
-                                <a>Sharjah</a>
-                                <a>Ajman</a>
-                                <a>Umm Al Quwain</a>
-                                <a>Ras Al-Khaimah</a>
-                                <a>Fujairah</a>
+                                <a href="AbuDhabi.php">Abu Dhabi</a>
+                                <a href="Dubai.php">Dubai</a>
+                                <a href="Sharjah.php">Sharjah</a>
+                                <a href="Ajman.php">Ajman</a>
+                                <a href="UmmAlQuwain.php">Umm Al Quwain</a>
+                                <a href="RasAlKhaimah.php">Ras Al-Khaimah</a>
+                                <a href="Fujairah.php">Fujairah</a>
                             </div>
                         </div>
                         <div class="all_rights_reserved">
