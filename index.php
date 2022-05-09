@@ -25,6 +25,7 @@ include 'data/codes.php'; // include the codes.php data
 <html>
 <head>
 
+    <!-- to make the website look good in all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- link Home Page CSS -->
@@ -67,7 +68,7 @@ include 'data/codes.php'; // include the codes.php data
                         the cultural center of Al Ain and the spectacular desert environment of the Al Dhafra Region. The emirate has
                         something for every tourist, with its natural islands and luxurious resorts, changing sand dunes and calm oasis.
                     </p>
-                    <a href="pages/Touravel_Emirate.php">Learn More</a> <!-- learn more button -->
+                    <a href="pages/AbuDhabi.php">Learn More</a> <!-- learn more button -->
                 </div>
             </div>
 
@@ -94,7 +95,7 @@ include 'data/codes.php'; // include the codes.php data
                         world's tallest freestanding construction (the Burj Khalifa), shop in luxury designer malls and historic trading
                         souks, and eat feasts inspired by global flavors while sleeping in a seven-star hotel!
                     </p>
-                    <a href="pages/Touravel_Emirate.php">Learn More</a> <!-- learn more button -->
+                    <a href="pages/Dubai.php">Learn More</a> <!-- learn more button -->
                 </div>
             </div>
 
@@ -121,7 +122,7 @@ include 'data/codes.php'; // include the codes.php data
                         It also has various museums, parks, an aquarium, and an Arabian animal center, as well as a variety of modern
                         amenities for guests.
                     </p>
-                    <a href="pages/Touravel_Emirate.php">Learn More</a> <!-- learn more button -->
+                    <a href="pages/Sharjah.php">Learn More</a> <!-- learn more button -->
                 </div>
             </div>
 
@@ -147,7 +148,7 @@ include 'data/codes.php'; // include the codes.php data
                         It is also a developing economy with a diverse range of tourist attractions including museums, beaches, forts,
                         and retail malls.
                     </p>
-                    <a href="pages/Touravel_Emirate.php">Learn More</a> <!-- learn more button -->
+                    <a href="pages/Ajman.php">Learn More</a> <!-- learn more button -->
                 </div>
             </div>
 
@@ -173,7 +174,7 @@ include 'data/codes.php'; // include the codes.php data
                         kilometers or about 1% of the UAE's total territory. Umm Al Quwain had a total population of 49,159 people
                         according to the December 2005 census.
                     </p>
-                    <a href="pages/Touravel_Emirate.php">Learn More</a> <!-- learn more button -->
+                    <a href="pages/UmmAlQuwain.php">Learn More</a> <!-- learn more button -->
                 </div>
             </div>
 
@@ -199,7 +200,7 @@ include 'data/codes.php'; // include the codes.php data
                         Offering magnificent landscapes, breathtaking coastlines, and rich, terracotta desert planes, the emirate has firmly
                         established itself as one of the most authentic destinations in the Middle East.
                     </p>
-                    <a href="pages/Touravel_Emirate.php">Learn More</a> <!-- learn more button -->
+                    <a href="pages/RasAlKhaimah.php">Learn More</a> <!-- learn more button -->
                 </div>
             </div>
 
@@ -225,7 +226,7 @@ include 'data/codes.php'; // include the codes.php data
                         Its primary hub is Fujairah City, a modern industrial town with few tourist attractions of its own.
                         Fujairah has enough to offer outside of Fujairah's grid pattern of high-rise office complexes.
                     </p>
-                    <a href="pages/Touravel_Emirate.php">Learn More</a> <!-- learn more button -->
+                    <a href="pages/Fujairah.php">Learn More</a> <!-- learn more button -->
                 </div>
             </div>
         </div>
