@@ -296,7 +296,7 @@ include '../data/codes.php'; // include the codes.php data
                             </p>
 
                             <!-- Book Now Button -->
-                            <a href="https://www.booking.com/hotel/ae/sharjah-grand.en-gb.html?aid=377346&label=sharjah-FyXfzJMlBZluhcny7x_v_gS394216149345%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-297601666475%3Akwd-2482278543%3Alp1000010%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YVv642bd3dAB8bPFPRgg0Gw&sid=6e960709da516d05765b0353c0c5e92b" target="_blank">
+                            <a href="http://www.booking.com/Share-vL80io" target="_blank">
                             BOOK NOW
                             </a>
                         </div>
@@ -327,7 +327,7 @@ include '../data/codes.php'; // include the codes.php data
                             </p>
 
                             <!-- Book Now Button -->
-                            <a href="https://www.booking.com/hotel/ae/royal-tulip-the-act.en-gb.html?aid=311984&label=royal-tulip-the-act-JIeGX61KMLV_mZRGxzI9cgS392952573017%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-299612541815%3Alp1000010%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcGt_tphEo8pAE6BwGOTZ3E&sid=6e960709da516d05765b0353c0c5e92b&dest_id=-782371;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1652025427;srpvid=88777029c8490795;type=total;ucfs=1&#hotelTmpl" target="_blank">
+                            <a href="http://www.booking.com/Share-plQj4J" target="_blank">
                             BOOK NOW
                             </a>
                         </div>
