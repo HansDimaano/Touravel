@@ -74,10 +74,39 @@ switch (document.title) { // evaluate the html title
 
     case "Touravel - Offers": // case for offers page
         header_navs[4].classList.add("active"); // assign the "active" class to offers link
+        footer.style.setProperty("background-image", bg_image_filter + "url(../images/offers_bg.png)"); // set the footer bg image to offers bg image
         break;
 
     case "Touravel - Our Story": // case for our story page
         header_navs[5].classList.add("active"); // assign the "active" class to our story link
         footer.style.setProperty("background-image", bg_image_filter + "url('../images/ourstory_bg.png')"); // set the footer bg image to our story bg image
+        break;
+
+    case "Touravel - Abu Dhabi": // case for abu dhabi page
+        footer.style.setProperty("background-image", bg_image_filter + "url('../images/abudhabi_bg.jpg')"); // set the footer bg image to abu dhabi bg image
+        break;
+
+    case "Touravel - Dubai": // case for dubai page
+        footer.style.setProperty("background-image", bg_image_filter + "url('../images/dubai_bg.png')"); // set the footer bg image to dubai bg image
+        break;
+
+    case "Touravel - Sharjah": // case for abu dhabi page
+        footer.style.setProperty("background-image", bg_image_filter + "url('../images/sharjah_bg.png')"); // set the footer bg image to sharjah bg image
+        break;
+
+    case "Touravel - Ajman": // case for abu dhabi page
+        footer.style.setProperty("background-image", bg_image_filter + "url('../images/ajman_bg.png')"); // set the footer bg image to ajman bg image
+        break;
+
+    case "Touravel - Umm Al Quwain": // case for uaq page
+        footer.style.setProperty("background-image", bg_image_filter + "url('../images/uaq_bg.png')"); // set the footer bg image to uaq bg image
+        break;
+
+    case "Touravel - Ras Al-Khaimah": // case for rak page
+        footer.style.setProperty("background-image", bg_image_filter + "url('../images/rak_bg.png')"); // set the footer bg image to rak bg image
+        break;
+
+    case "Touravel - Fujairah": // case for fujairah page
+        footer.style.setProperty("background-image", bg_image_filter + "url('../images/fujairah_bg.png')"); // set the footer bg image to fujairah bg image
         break;
 }
