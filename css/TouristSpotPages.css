@@ -1,0 +1,680 @@
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&family=Istok+Web:wght@700&display=swap');
+
+/* import Header and Footer css */
+@import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
+@import "RevealAnimation.css";
+
+
+/* change box-sizing of all items to border-box and background image settings*/
+* {
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* HTML body settings */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* Tourist Spot Title Container */
+.title_container {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-bottom: 80px solid white;
+    border-radius: 0 0 50% 50%;
+    position: relative;
+}
+
+    /* Tourist Spot Title Container children */
+    .title_container > * {
+        animation: start-animation 1s ease-in-out; /* apply start animation to all children of Tourist Spot Title Container */
+    }
+
+/* Start Animation for children of Tourist Spot Title Container */
+@keyframes start-animation {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+    /* Go Back button */
+    .title_container button {
+        padding: 7px 12px;
+        border: 3px solid white;
+        border-radius: 10px;
+        box-shadow: 1px 1px black;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    /* Go Back button hover and visited settings */
+    .title_container button:hover{
+        border-color: #4D7850;
+        background-color: #4D7850;
+        cursor: pointer;
+    }
+
+     .title_container button:visited{
+         text-decoration: none;
+         color: white;
+     }
+
+
+    /* Title Container Links Hover Settings */
+    .title_container a:hover {
+        cursor: pointer;
+    }
+
+    /* Download PDF Button */
+    .title_container a.download {
+        position: absolute;
+        top: 50px;
+        width: 400px;
+    }
+
+    /* Download PDF Button Image */
+    .title_container a.download img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Touravel Logo */
+    .title_container a.logo {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 125px;
+    }
+
+    /* Touravel Logo Image */
+    .title_container a.logo img {
+        width: 100%;
+        height: auto;
+    }
+
+/* Heading 1 (Tourist Spot Title and Subheadings) */
+h1 {
+    color: white;
+    font-size: 70px;
+    font-family: 'Julius Sans One', sans-serif;
+    -webkit-text-stroke: white 4px;
+    letter-spacing: 10px;
+    line-height: 120px;
+    text-shadow: 8px 8px black;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+/* Paragraph (Description Text) */
+p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Forum', cursive;
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+    /* Visit Website Button */
+    .title_container a.website {
+        padding: 7px 12px;
+        border: 3px solid white;
+        border-radius: 10px;
+        box-shadow: 1px 1px black;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        margin-left: -2%;
+    }
+
+    /* Visit Website button hover and visited settings */
+    .title_container a.website:hover {
+        border-color: #4D7850;
+        background-color: #4D7850;
+        cursor: pointer;
+    }
+
+    .title_container a.website:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+/* Opening Hours Container */
+.opening_hours {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/openinghours_bg.png');
+    margin-top: -500px;
+    padding-top: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Opening Hours Content Box */
+.opening_content {
+    width: 85%;
+    height: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+/* Opening Hours Details */
+.opening_details {
+    width: 50%;
+    padding-top: 20px;
+    border: 10px solid white;
+    border-right: none;
+}
+
+    /* Opening Hours Details Text */
+    .opening_details h3 {
+        color: white;
+        font-size: 20px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: white 1px;
+        letter-spacing: 10px;
+        line-height: 50px;
+        text-shadow: 3px 3px black;
+        margin: 0;
+        width: max-content;
+    }
+
+    /* Opening Hours Days Text */
+    .opening_details h3.day {
+        text-align: left;
+        float: left;
+        margin-left: 20px;
+    }
+
+    /* Opening Hours Time Text */
+    .opening_details h3.time {
+        text-align: right;
+        float: right;
+        margin-right: 20px;
+    }
+
+    /* Tourist Spot Image */
+    .opening_details img {
+        width: 100%;
+    }
+
+/* Google Maps */
+iframe {
+    width: 50%;
+    height: auto;
+    border: 0;
+}
+
+/* Dinings Container */
+.dinings {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/dinings_bg.png');
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    /* Dining Title */
+    .dinings h2 {
+        color: white;
+        font-size: 40px;
+        font-family: 'Anonymous Pro', sans-serif;
+        letter-spacing: 10px;
+        text-shadow: 3px 3px black;
+        margin: 20px 0 10px 0;
+        width: 90%;
+    }
+
+/* Dining Content Box */
+.dinings_content {
+    width: 85%;
+    height: 650px;
+    display: flex;
+    margin-top: 50px;
+}
+
+    /* Dining Restaurant Image */
+    .dinings_content img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+/* Well-known Activities Container */
+.activities {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/activities_bg.png');
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Activities Content Box */
+.activities_content {
+    width: 85%;
+    height: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+    /* Activities Content Image */
+    .activities_content img {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+/* Activities Details */
+.activities_details {
+    width: 40%;
+    padding: 30px;
+    border: 10px solid white;
+    border-left: none;
+}
+
+    /* Activities Details Text */
+    .activities_details h3 {
+        color: white;
+        font-size: 20px;
+        font-family: 'Anonymous Pro', sans-serif;
+        letter-spacing: 5px;
+        line-height: 50px;
+        text-shadow: 3px 3px black;
+        text-align: left;
+    }
+
+/*
+    NOTE:
+
+    All Tourist Spot Footer has the same bg image,
+    so I just set it here instead of setting it in Header_and_Footer.js
+
+*/
+
+
+/* Tourist Spot Footer */
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url('../images/touristspot_footerbg.jpg');
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* 1200PX - 901PX */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /* Tourist Spot Title Container */
+    .title_container {
+        border-bottom: 40px solid white;
+    }
+
+    /* Opening Hours Content Box */
+    .opening_content {
+        flex-direction: column;
+    }
+
+    /* Opening Hours Details */
+    .opening_details {
+        width: 100%;
+        border-right: 10px solid white;
+        border-bottom: none;
+    }
+
+    /* Google Maps */
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* Dining Content Box */
+    .dinings_content {
+        height: auto;
+        flex-direction: column;
+    }
+
+        /* Dining Restaurant Image */
+        .dinings_content img {
+            width: 100%;
+            height: 500px;
+        }
+}
+
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+    /* Tourist Spot Title Container */
+    .title_container {
+        border-bottom: 40px solid white;
+    }
+
+    /* Download PDF Button */
+    .title_container a.download {
+        width: 300px;
+    }
+
+    /* Touravel Logo */
+    .title_container a.logo {
+        width: 100px;
+    }
+
+    /* Heading 1 (Tourist Spot Title and Subheadings) */
+    h1 {
+        font-size: 50px;
+        line-height: 100px;
+        text-shadow: 6px 6px black;
+    }
+
+    /* Opening Hours Container */
+    .opening_hours {
+        padding-top: 575px;
+    }
+
+    /* Opening Hours Content Box */
+    .opening_content {
+        flex-direction: column;
+    }
+
+    /* Opening Hours Details */
+    .opening_details {
+        width: 100%;
+        border-right: 10px solid white;
+        border-bottom: none;
+    }
+
+    /* Google Maps */
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* Dining Content Box */
+    .dinings_content {
+        height: auto;
+        flex-direction: column;
+    }
+
+        /* Dining Restaurant Image */
+        .dinings_content img {
+            width: 100%;
+            height: 500px;
+        }
+
+    /* Activities Content Box */
+    .activities_content {
+        flex-direction: column;
+    }
+
+        /* Activities Content Image */
+        .activities_content img {
+            width: 100%;
+        }
+
+    /* Activities Details */
+    .activities_details {
+        width: 100%;
+        border-left: 10px solid white;
+        border-top: none;
+    }
+}
+
+/* 800PX - 501PX */
+@media screen and (max-width: 800px) and (min-width: 501px) {
+
+    /* Tourist Spot Title Container */
+    .title_container {
+        border-bottom: 40px solid white;
+        padding-top: 300px;
+    }
+
+    /* Go Back button */
+    .title_container button {
+        top: 50px;
+    }
+
+    /* Download PDF Button */
+    .title_container a.download {
+        width: 300px;
+        top: 150px;
+    }
+
+    /* Touravel Logo */
+    .title_container a.logo {
+        width: 85px;
+        top: 50px;
+    }
+
+    /* Heading 1 (Tourist Spot Title and Subheadings) */
+    h1 {
+        font-size: 30px;
+        line-height: 50px;
+        text-shadow: 6px 6px black;
+    }
+
+    /* Paragraph (Description Text) */
+    p {
+        font-size: 12px;
+    }
+
+    /* Opening Hours Container */
+    .opening_hours {
+        padding-top: 575px;
+    }
+
+    /* Opening Hours Content Box */
+    .opening_content {
+        flex-direction: column;
+    }
+
+    /* Opening Hours Details */
+    .opening_details {
+        width: 100%;
+        border-right: 10px solid white;
+        border-bottom: none;
+    }
+
+        /* Opening Hours Details Text */
+        .opening_details h3 {
+            font-size: 13px;
+        }
+
+    /* Google Maps */
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* Dining Title */
+    .dinings h2 {
+        font-size: 25px;
+    }
+
+    /* Dining Content Box */
+    .dinings_content {
+        height: auto;
+        flex-direction: column;
+    }
+
+        /* Dining Restaurant Image */
+        .dinings_content img {
+            width: 100%;
+            height: 500px;
+        }
+
+    /* Activities Content Box */
+    .activities_content {
+        flex-direction: column;
+    }
+
+        /* Activities Content Image */
+        .activities_content img {
+            width: 100%;
+        }
+
+    /* Activities Details */
+    .activities_details {
+        width: 100%;
+        border-left: 10px solid white;
+        border-top: none;
+    }
+
+        /* Activities Details Text */
+        .activities_details h3 {
+            font-size: 17px;
+        }
+}
+
+/* 500PX and below */
+@media screen and (max-width: 500px) {
+
+    /* Tourist Spot Title Container */
+    .title_container {
+        border-bottom: 40px solid white;
+        padding-top: 300px;
+    }
+
+        /* Go Back button */
+        .title_container button {
+            font-size: 12px;
+            top: 50px;
+        }
+
+        /* Download PDF Button */
+        .title_container a.download {
+            width: 300px;
+            top: 150px;
+        }
+
+        /* Touravel Logo */
+        .title_container a.logo {
+            width: 85px;
+            top: 50px;
+        }
+
+    /* Heading 1 (Tourist Spot Title and Subheadings) */
+    h1 {
+        font-size: 30px;
+        line-height: 50px;
+        text-shadow: 6px 6px black;
+    }
+
+    /* Paragraph (Description Text) */
+    p {
+        font-size: 12px;
+    }
+
+    /* Visit Website Button */
+    .title_container a.website {
+        font-size: 12px;
+    }
+
+    /* Opening Hours Container */
+    .opening_hours {
+        padding-top: 575px;
+    }
+
+    /* Opening Hours Content Box */
+    .opening_content {
+        flex-direction: column;
+    }
+
+    /* Opening Hours Details */
+    .opening_details {
+        width: 100%;
+        border-right: 10px solid white;
+        border-bottom: none;
+    }
+
+        /* Opening Hours Details Text */
+        .opening_details h3 {
+            font-size: 10px;
+        }
+
+    /* Google Maps */
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* Dining Title */
+    .dinings h2 {
+        font-size: 25px;
+    }
+
+    /* Dining Content Box */
+    .dinings_content {
+        height: auto;
+        flex-direction: column;
+    }
+
+        /* Dining Restaurant Image */
+        .dinings_content img {
+            width: 100%;
+            height: 500px;
+        }
+
+    /* Activities Content Box */
+    .activities_content {
+        flex-direction: column;
+    }
+
+        /* Activities Content Image */
+        .activities_content img {
+            width: 100%;
+        }
+
+    /* Activities Details */
+    .activities_details {
+        width: 100%;
+        border-left: 10px solid white;
+        border-top: none;
+    }
+
+        /* Activities Details Text */
+        .activities_details h3 {
+            font-size: 17px;
+        }
+}
