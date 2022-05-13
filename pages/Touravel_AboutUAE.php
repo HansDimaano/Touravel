@@ -36,7 +36,7 @@ include '../data/codes.php'; // include the codes.php data
             To test your knowledge about UAE, we prepared an easy
             and fun quiz for you!
         </p>
-        <a>TAKE QUIZ</a>
+        <a href="Quiz.php">TAKE QUIZ</a> <!-- take quiz button -->
     </div>
 
     <div class="subheading">
