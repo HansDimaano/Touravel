@@ -1,0 +1,216 @@
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&family=Istok+Web:wght@700&display=swap');
+
+/* import Header and Footer css */
+@import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
+@import "RevealAnimation.css";
+
+
+/* change box-sizing of all items to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* HTML body settings */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 25px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/quizresults_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    body > * {
+        animation: start-animation 1s ease-in-out; /* apply start animation to all children of HTML body */
+    }
+
+/* Start Animation for children of HTML body */
+@keyframes start-animation {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Touravel Logo */
+.logo {
+    width: 15%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+/* Score Container */
+.score_container {
+    width: 80%;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    border-radius: 70px;
+    padding: 0 30px;
+}
+
+/* "You Scored" Text */
+h3 {
+    font-size: 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    -webkit-text-stroke: #EFB34C 4px;
+    letter-spacing: 10px;
+    line-height: 120px;
+    text-shadow: 6px 6px black;
+    margin: 30px 0 10px 0;
+    color: #EFB34C;
+}
+
+/* Score Text */
+h1 {
+    font-size: 150px;
+    font-family: 'Anonymous Pro', sans-serif;
+    -webkit-text-stroke: white 1px;
+    letter-spacing: 20px;
+    line-height: 150px;
+    margin: 10px 0 50px 0;
+    color: white;
+}
+
+/* Result Message Text */
+p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Forum', cursive;
+    letter-spacing: 5px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+/* Buttons Container */
+.buttons {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Buttons */
+a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Istok Web', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+    /* Button hover settings */
+    a:hover {
+        color: #fdd835;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+/* Button Image */
+a img {
+    width: 75px;
+    height: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+/* 800PX - 601PX */
+@media screen and (max-width: 800px) and (min-width: 601px) {
+
+    /* Touravel Logo */
+    .logo {
+        width: 20%;
+    }
+
+    /* "You Scored" Text */
+    h3 {
+        font-size: 30px;
+    }
+
+    /* Score Text */
+    h1 {
+        font-size: 100px;
+    }
+
+    /* Result Message Text */
+    p {
+        font-size: 15px;
+    }
+
+    /* Buttons */
+    a {
+        font-size: 13px;
+    }
+}
+
+/* 600PX and below */
+@media screen and (max-width: 600px) {
+
+    /* Touravel Logo */
+    .logo {
+        width: 20%;
+    }
+
+    /* "You Scored" Text */
+    h3 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    /* Score Text */
+    h1 {
+        font-size: 60px;
+    }
+
+    /* Result Message Text */
+    p {
+        color: white;
+        font-size: 15px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 5px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    /* Buttons Container */
+    .buttons {
+        flex-direction: column;
+    }
+
+    /* Buttons */
+    a {
+        font-size: 13px;
+    }
+
+    /* 2nd Button */
+    a:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    /* 2nd Button Image */
+    a:nth-child(2) img {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}

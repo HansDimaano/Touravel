@@ -1,0 +1,354 @@
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Forum&family=Julius+Sans+One&family=Istok+Web:wght@700&display=swap');
+
+/* import Header and Footer css */
+@import "Header_and_Footer.css";
+
+/* import Reveal Animation css */
+@import "RevealAnimation.css";
+
+
+/* change box-sizing of all items to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* HTML body settings */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* UAE Knowledge Test Title Container */
+.title_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url('../images/uaequiz_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-bottom: 80px solid white;
+    border-radius: 0 0 50% 50%;
+    position: relative;
+}
+
+    /* UAE Knowledge Test Title Container children */
+    .title_container > * {
+        animation: start-animation 1s ease-in-out; /* apply start animation to all children of UAE Knowledge Test Title Container */
+    }
+
+/* Start Animation for children of UAE Knowledge Test Title Container */
+@keyframes start-animation {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Go Back button */
+.title_container button {
+    padding: 7px 12px;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+    /* Go Back button hover and visited settings */
+    .title_container button:hover {
+        border-color: #4D7850;
+        background-color: #4D7850;
+        cursor: pointer;
+    }
+
+    .title_container button:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Touravel Logo */
+    .title_container a.logo {
+        cursor: pointer;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 125px;
+    }
+
+    /* Touravel Logo Image */
+    .title_container a.logo img {
+        width: 100%;
+        height: auto;
+    }
+
+/* Heading 1 (UAE Knowledge Test title) */
+h1 {
+    color: white;
+    font-size: 80px;
+    font-family: 'Julius Sans One', sans-serif;
+    -webkit-text-stroke: white 4px;
+    letter-spacing: 10px;
+    line-height: 120px;
+    text-shadow: 8px 8px black;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+/* Quiz Container */
+.quiz_container {
+    margin-top: -500px;
+    padding-top: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/quizquestion_bg.png');
+    background-position: center center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quiz Form */
+#quiz {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Question Container */
+.question_container {
+    background-color: black;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 140px;
+    overflow: visible;
+}
+
+    /* Question Number Text */
+    .question_container h2 {
+        width: 50%;
+        color: white;
+        font-size: 30px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: white 2px;
+        letter-spacing: 10px;
+        line-height: 70px;
+        text-shadow: 4px 4px black;
+        margin: -40px 0 60px 0;
+        background-color: #10890E;
+        border-radius: 50px;
+    }
+
+    /* Question Text */
+    .question_container h3 {
+        color: white;
+        font-size: 20px;
+        font-family: 'Forum', cursive;
+        letter-spacing: 5px;
+        line-height: 30px;
+        margin-bottom: 70px;
+        width: 90%;
+    }
+
+/* Choices Container */
+.choices_container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+/* Choices Text */
+#quiz label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 25%;
+    min-width: max-content;
+    padding: 5px 30px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    color: white;
+    font-size: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    -webkit-text-stroke: white 2px;
+    letter-spacing: 10px;
+    line-height: 30px;
+    text-shadow: 2px 2px black;
+    margin: 0;
+    background-color: #9B1818;
+    border-radius: 50px;
+}
+
+/* Quiz Form Radio Input */
+#quiz input[type="radio"] {
+    display: none;
+}
+
+    /* Choices Text Label checked settings */
+    #quiz input[type="radio"]:checked + label {
+        border: dashed 2px white;
+    }
+
+/* Submit Button */
+#quiz input[type=submit] {
+    cursor: pointer;
+    width: 25%;
+    min-width: max-content;
+    padding: 20px 50px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    color: white;
+    font-size: 35px;
+    font-family: 'Julius Sans One', sans-serif;
+    -webkit-text-stroke: white 2px;
+    letter-spacing: 10px;
+    line-height: 30px;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    margin-bottom: 140px;
+    background-color: #06533A;
+    border-radius: 20px;
+}
+
+/* Submit Button hover settings */
+#quiz input[type=submit]:hover {
+    background-color: #06533A;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+    /* Choices Container */
+    .choices_container {
+        flex-wrap: wrap;
+    }
+
+    /* Choices Text */
+    #quiz label {
+        margin-bottom: 50px;
+    }
+}
+
+/* 800PX - 501PX */
+@media screen and (max-width: 800px) and (min-width: 501px) {
+
+    /* Heading 1 (UAE Knowledge Test title) */
+    h1 {
+        font-size: 50px;
+        line-height: 80px;
+    }
+
+    /* Question Number Text */
+    .question_container h2 {
+        width: 80%;
+        font-size: 20px;
+        text-shadow: 2px 2px black;
+    }
+
+    /* Choices Container */
+    .choices_container {
+        flex-wrap: wrap;
+    }
+
+    /* Choices Text */
+    #quiz label {
+        margin-bottom: 50px;
+    }
+}
+
+/* 500PX and below */
+@media screen and (max-width: 500px) {
+
+    /* Go Back button */
+    .title_container button {
+        font-size: 12px;
+        top: 50px;
+    }
+
+    /* Touravel Logo */
+    .title_container a.logo {
+        width: 85px;
+        top: 50px;
+    }
+
+    /* Heading 1 (UAE Knowledge Test title) */
+    h1 {
+        font-size: 30px;
+        line-height: 80px;
+    }
+
+    /* Question Number Text */
+    .question_container h2 {
+        width: 80%;
+        font-size: 20px;
+        text-shadow: 2px 2px black;
+    }
+
+    /* Choices Container */
+    .choices_container {
+        flex-wrap: wrap;
+    }
+
+    /* Choices Text */
+    #quiz label {
+        margin-bottom: 50px;
+    }
+
+    /* Submit Button */
+    #quiz input[type=submit] {
+        cursor: pointer;
+        width: 25%;
+        min-width: min-content;
+        padding: 20px 50px;
+        border: 2px solid transparent;
+        transition: all 0.3s;
+        color: white;
+        font-size: 20px;
+        font-family: 'Julius Sans One', sans-serif;
+        -webkit-text-stroke: white 2px;
+        letter-spacing: 10px;
+        line-height: 30px;
+        text-shadow: 2px 2px black;
+        text-align: center;
+        margin-bottom: 140px;
+        background-color: #06533A;
+        border-radius: 20px;
+    }
+}
