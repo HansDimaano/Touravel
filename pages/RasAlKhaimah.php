@@ -29,6 +29,7 @@ include '../data/codes.php'; // include the codes.php data
 
 </head>
 <body>
+    <!-- (from codes.php) include the header code -->
     <?php echo $header_general ?>
 
     <!-- RAS AL KHAIMAH TITLE CONTAINER (each emirate title container has unique bg image, therefore I used inline css) -->
@@ -138,7 +139,7 @@ include '../data/codes.php'; // include the codes.php data
                     eastern part of Ras Al Khaimah, UAE, and Oman. Jebel Jais, at 1,934 meters above sea level, offers breathtaking views and exhilarating adventures to 
                     all visitors. 
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/JebelJais.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -166,7 +167,7 @@ include '../data/codes.php'; // include the codes.php data
                     authentic camp, you may learn about the traditional Bedouin way of living in the desert. With enormous seats and luxurious Arabian rugs set around a 
                     raging campfire, traditional goat hair tents create distinctive entertaining venues.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/BedouinOasisCamp.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -194,7 +195,7 @@ include '../data/codes.php'; // include the codes.php data
                     experience like off-road drives, pool dips, natural springs, greenery and the mountains. One can venture out to the Shawka trail because of its 
                     challenging route and the picturesque beauty of mountains as the backdrop.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/WadiShawka.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
