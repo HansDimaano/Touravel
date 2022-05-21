@@ -29,6 +29,7 @@ include '../data/codes.php'; // include the codes.php data
 
 </head>
 <body>
+    <!-- (from codes.php) include the header code -->
     <?php echo $header_general ?>
 
     <!-- AJMAN TITLE CONTAINER (each emirate title container has unique bg image, therefore I used inline css) -->
@@ -135,7 +136,7 @@ include '../data/codes.php'; // include the codes.php data
                     Al Zorah natural reserve Ajman is located in the coastal suburb of Ajman. It's a beautiful and vibrant ecosystem spread across one million square 
                     meters of lively Al Zorah mangrove, sandy lagoons, beaches, and tidal creeks.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/AlZorahNaturalReserve.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -162,7 +163,7 @@ include '../data/codes.php'; // include the codes.php data
                     The 18th-century fortress that was once Ajman's first line of defense now houses the emirate's museum. The ethnographical exhibit gallery here focus 
                     on the traditional local lifestyle, with dioramas of typical day-to-day Emirati life before the oil boom.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/AjmanMuseum.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -190,7 +191,7 @@ include '../data/codes.php'; // include the codes.php data
                     merchant ships we encounter today, dhows were the primary modes of transport and trading in the region. In this post, we will talk about the Ajman 
                     Dhow Building Yard and glance at the rich history and significance of the vessel in UAE.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/DhowYard.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
