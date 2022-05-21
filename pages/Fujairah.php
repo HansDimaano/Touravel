@@ -29,6 +29,7 @@ include '../data/codes.php'; // include the codes.php data
 
 </head>
 <body>
+    <!-- (from codes.php) include the header code -->
     <?php echo $header_general ?>
 
     <!-- FUJAIRAH TITLE CONTAINER (each emirate title container has unique bg image, therefore I used inline css) -->
@@ -138,7 +139,7 @@ include '../data/codes.php'; // include the codes.php data
                     only stone building along the Fujairah coast for many centuries. Established in the year 1670, Fujairah Fort reflects the profound past of the region. 
                     It is a mud-brick building comprising of three main sections, one square tower and two round towers.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/FujairahFort.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -166,7 +167,7 @@ include '../data/codes.php'; // include the codes.php data
                     shaped rock that looks like the cartoon character Snoopy lying on its back. The popular water activities here are snorkelling and diving. The area is 
                     surrounded by beautiful reefs teeming with shoals of marine life where you can occasionally spot turtles and small sharks. 
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/SnoopyIsland.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -194,7 +195,7 @@ include '../data/codes.php'; // include the codes.php data
                     the mosque can be viewed from only the outside. Adorned with six hundred metre high minarets and sixty-four domes; this granite and marble religious 
                     structure can comfortably seat 28000 worshippers.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/SheikhZayedMosque.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
