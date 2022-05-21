@@ -1,9 +1,10 @@
+/* import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Julius+Sans+One&display=swap');
 
-*{
-    box-sizing: border-box;
-}
 
+/* ~~~~~~~~~~~~~~~~~~~~ HEADER CSS ~~~~~~~~~~~~~~~~~~~~ */
+
+/* Header container */
 header {
     position: absolute;
     display: inline-flex;
@@ -17,9 +18,10 @@ header {
     width: 80%;
     height: 100px;
     z-index: 3;
-    animation: header-animation 1s ease-in-out;
+    animation: header-animation 1s ease-in-out; /* apply header animation to Header Container */
 }
 
+ /* apply start animation to all children of Offers Title Container */
 @keyframes header-animation {
     from {
         opacity: 0;
@@ -32,6 +34,7 @@ header {
     }
 }
 
+/* Header links */
 header a {
     display: flex;
     align-items: center;
@@ -47,44 +50,55 @@ header a {
     border-radius: 10px;
 }
 
+/* Header link hover */
 header a:hover {
     cursor: pointer;
     background-color: #213422;
 }
 
+/* Header link active */
 header a:active {
     color: #EFB34C;
     text-shadow: .5px .5px #EFB34C;
 }
 
+/* Header link visited */
 header a:visited {
     color: white;
 }
 
+/* Touravel Logo image container */
 header a.logo {
     margin-top: -1.5%;
     margin-right: 30px;
 }
 
+/* Touravel Logo image hover */
 header a.logo:hover {
     cursor: pointer;
     background-color: transparent;
 }
 
+/* Touravel Logo image */
 header a.logo img {
     height: 50px;
     object-fit: cover;
 }
 
+/* Header link active (current highlighted page) */
 header a.active {
     color: #EFB34C;
     background-color: #4D7850;
     text-shadow: .5px .5px #EFB34C;
 }
 
-/* STICKY HEADER CSS */
 
+
+/* ~~~~~~~~~~~~~~~~~~~~ STICKY HEADER CSS ~~~~~~~~~~~~~~~~~~~~ */
+
+/* Sticky Header settings */
 .sticky_header {
+    position: -webkit-sticky;
     position: fixed;
     top: 0;
     left: 0;
@@ -93,20 +107,29 @@ header a.active {
     height: 50px;
     background-color: #213422;
     animation: none;
+    z-index: 1000;
 }
 
+/* Sticky Header Touravel Logo container */
 .sticky_header a.logo{
     margin-top: -0.5%;
 }
 
+/* Sticky Header Touravel Logo container image */
 .sticky_header a.logo img{
     height: 40px;
 }
 
+/* Sticky Header link hover */
 .sticky_header a:hover{
     background-color: #38623a;
 }
 
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ FOOTER CSS ~~~~~~~~~~~~~~~~~~~~ */
+
+/* Footer container */
 footer {
     width: 100%;
     background-size: cover;
@@ -115,6 +138,7 @@ footer {
     color: white;
 }
 
+/* Footer content container */
 footer .content{
     display: flex;
     justify-content: space-between;
@@ -122,15 +146,18 @@ footer .content{
     padding: 50px 80px;
 }
 
+/* Footer Touravel content container */
 footer .touravel{
     width: 20%;
 }
 
+/* Footer Touravel Logo */
 footer .touravel img{
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
+/* Footer Touravel content text */
 footer .touravel p{
     font-size: 14px;
 	font-family: 'Forum', cursive;
@@ -138,10 +165,12 @@ footer .touravel p{
     line-height: 25px;
 }
 
+/* Footer connect us content container */
 footer .connect_us{
     width: 40%;
 }
 
+/* Footer connect us title */
 footer .connect_us h3{
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
@@ -150,6 +179,7 @@ footer .connect_us h3{
     letter-spacing: 10px;
 }
 
+/* Footer connect us description */
 footer .connect_us p{
     font-size: 14px;
 	font-family: 'Forum', cursive;
@@ -157,6 +187,7 @@ footer .connect_us p{
     line-height: 25px;
 }
 
+/* Input Settings */
 input[type=email], input[type=text] {
     width: 48.5%;
     padding: 10px 15px;
@@ -167,18 +198,22 @@ input[type=email], input[type=text] {
     margin-bottom: 15px;
 }
 
+/* Email input */
 input[type=email] {
    width: 100%;
 }
 
+/* Left Text input */
 .left_input {
     float: left;
 }
 
+/* Right Text input */
 .right_input {
     float: right;
 }
 
+/* Message input */
 footer textarea {
     width: 100%;
     background-color: transparent;
@@ -192,6 +227,7 @@ footer textarea {
     line-height: 25px;
 }
 
+    /* Input placeholders settings */
     input[type=email]::placeholder, input[type=text]::placeholder, textarea::placeholder {
         color: white;
         font-size: 14px;
@@ -200,15 +236,13 @@ footer textarea {
         line-height: 25px;
     }
 
+    /* Input Focus settings */
     input[type=email]:focus, input[type=text]:focus, textarea:focus {
         border-color: #4D7850;
         outline: none;
     }
 
-    input:valid, input:invalid{
-        background-color: transparent;
-    }
-
+/* Send Message button */
 footer input[type=submit]{
     color: black;
 	background-color: #EFB34C;
@@ -221,21 +255,25 @@ footer input[type=submit]{
     border: none;
 }
 
+    /* Send Message button hover */
     footer input[type=submit]:hover {
         cursor: pointer;
         background-color: #4D7850;
         color: white;
     }
 
+/* Message Sent text (hidden at first) */
 form p {
     color: #EFB34C;
     display: none;
 }
 
+/* Message Sent text when active (shown) */
 form p.active{
     display: block;
 }
 
+/* Footer Explore content container */
 footer .explore{
     display: flex;
     flex-direction: column;
@@ -243,6 +281,7 @@ footer .explore{
     width: 20%;
 }
 
+/* Footer Explore Title */
 footer .explore h3{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
@@ -250,20 +289,29 @@ footer .explore h3{
     letter-spacing: 10px;
 }
 
-footer .explore a{
+/* Footer Explore Links */
+footer .explore a, footer .explore a:active{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 14px;
     text-shadow: 1px 1px black;
     letter-spacing: 10px;
     line-height: 35px;
+    color: white;
+    margin: 15px 0;
+    line-height: 25px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
 }
 
+/* Footer Explore Link hover */
 footer .explore a:hover{
     cursor: pointer;
-    border-top: 3px solid #EFB34C;
-    border-bottom: 3px solid #EFB34C;
+    border-top: 1px solid #EFB34C;
+    border-bottom: 1px solid #EFB34C;
 }
 
+/* Footer all rights reserved container */
 footer .all_rights_reserved{
     display: flex;
     justify-content: center;
@@ -272,81 +320,194 @@ footer .all_rights_reserved{
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+/* Footer all rights reserved text */
 footer .all_rights_reserved p{
     font-size: 19px;
     font-family: 'Forum', cursive;
     letter-spacing: 2px;
     line-height: 30px;
+    padding: 10px 20px;
 }
+
 
 
 /* MEDIA QUERIES */
 
+/* 1200PX - 901PX */
 @media screen and (max-width: 1200px) and (min-width: 901px){
+
+    /* Header links */
     header a{
         min-width: 100px;
         font-size: 13px;
     }
 
+    /* Sticky Header Touravel Logo container */
     .sticky_header a.logo {
         margin-top: -4px;
     }
 
+    /* Sticky Header Touravel Logo container i*/
     .sticky_header a.logo img {
         height: 30px;
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 801px) {
+/* 900PX - 801PX */
+@media screen and (max-width: 900px) and (min-width: 801px) {
+
+    /* Header links */
     header a {
         min-width: 75px;
         font-size: 10px;
     }
 
+        /* Touravel Logo image */
         header a.logo img{
             height: 30px;
         }
 
+    /* Sticky Header settings (sticky header removed from 1000px and below) */
     .sticky_header {
         display: none;
     }
+
+    /* Footer content container */
+    footer .content {
+        flex-wrap: wrap;
+    }
+
+    /* Footer content container children */
+    footer .content > * {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    /* Footer Touravel content container */
+    footer .touravel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+        /* Footer Touravel content text */
+        footer .touravel p {
+            line-height: 15px;
+        }
 }
 
-@media screen and (max-width: 800px) and (min-width: 501px) {
+/* 800PX - 601PX */
+@media screen and (max-width: 800px) and (min-width: 601px) {
+
+    /* Header links */
     header a {
         min-width: 75px;
         font-size: 8px;
     }
 
+        /* Touravel Logo image */
         header a.logo img {
             height: 30px;
         }
 
+    /* Sticky Header settings (sticky header removed from 1000px and below) */
     .sticky_header {
         display: none;
     }
+
+    /* Footer content container */
+    footer .content {
+        flex-wrap: wrap;
+        padding: 30px 40px;
+    }
+
+        /* Footer content container children */
+        footer .content > * {
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
+    /* Footer Touravel content container */
+    footer .touravel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+        /* Footer Touravel content text */
+        footer .touravel p {
+            line-height: 20px;
+        }
+
+    /* Footer all rights reserved text */
+    footer .all_rights_reserved p {
+        font-size: 13px;
+    }
 }
 
-@media screen and (max-width: 500px) {
+/* 600PX and below */
+@media screen and (max-width: 600px) {
+
+    /* Header container */
     header{
         flex-wrap: wrap;
     }
 
+    /* Header links */
     header a {
         min-width: 75px;
         font-size: 8px;
         margin: 3px 0.6%;
     }
 
+        /* Touravel Logo image container */
         header a.logo {
             width: 100%;
+            margin-right: -1px;
         }
 
+            /* Touravel Logo image */
             header a.logo img {
                 height: 30px;
             }
 
+    /* Sticky Header settings (sticky header removed from 1000px and below) */
     .sticky_header {
         display: none;
+    }
+
+    /* Footer content container */
+    footer .content {
+        flex-wrap: wrap;
+        padding: 30px 40px;
+    }
+
+        /* Footer content container children */
+        footer .content > * {
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
+    /* Footer Touravel content container */
+    footer .touravel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+        /* Footer Touravel content text */
+        footer .touravel p {
+            line-height: 20px;
+        }
+
+    /* Footer all rights reserved text */
+    footer .all_rights_reserved p {
+        font-size: 13px;
     }
 }
