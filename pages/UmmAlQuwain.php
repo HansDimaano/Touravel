@@ -29,6 +29,7 @@ include '../data/codes.php'; // include the codes.php data
 
 </head>
 <body>
+    <!-- (from codes.php) include the header code -->
     <?php echo $header_general ?>
 
     <!-- UMM AL QUWAIN TITLE CONTAINER (each emirate title container has unique bg image, therefore I used inline css) -->
@@ -136,7 +137,7 @@ include '../data/codes.php'; // include the codes.php data
                     But what's unique with them is the camping opportunity that is available for visitors for 2 nights. Experience Dreamland Aqua Park's ultimate overnight
                     camping for two days of fun, exciting rides, and unforgettable memories, or simply rent out their Cabana for one day.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/DreamlandAquaPark.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -164,7 +165,7 @@ include '../data/codes.php'; // include the codes.php data
                     museum. This museum displays the history of the UAE in one spectacular castle, with visitors ranging from GCC expats to school field excursions. 
                     The museum houses a priceless collection of artifacts unearthed from adjacent sites.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/UmmAlQuwainMuseum.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -192,7 +193,7 @@ include '../data/codes.php'; // include the codes.php data
                     surrounding and settings for the racing are outstanding which make the environment thrilling and amazing. There are five tracks for every kind of 
                     racing. The category of racing includes quad bikes, drag cars, motocross and endurance race cars.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/EmiratesMotorplex.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
