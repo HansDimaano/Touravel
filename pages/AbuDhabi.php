@@ -29,6 +29,7 @@ include '../data/codes.php'; // include the codes.php data
 
 </head>
 <body>
+    <!-- (from codes.php) include the header code -->
     <?php echo $header_general ?>
 
     <!-- ABU DHABI TITLE CONTAINER (each emirate title container has unique bg image, therefore I used inline css) -->
@@ -138,7 +139,7 @@ include '../data/codes.php'; // include the codes.php data
                     the Sheikh Zayed Mosque blends the UAE's rich history and the values of Islamic traditions with grandeur and magnificence.
                     This beautiful mosque is a sight to behold, no matter what time of the day you choose to visit.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/SheikhZayedGrandMosque.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -166,7 +167,7 @@ include '../data/codes.php'; // include the codes.php data
                     rides and experiences for all ages. The latest editions to the epic list of attractions at this world-class theme park include the chance
                     to walk on the destination's iconic red roof .. or take a zipline across it!
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/FerrariWorld.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -194,7 +195,7 @@ include '../data/codes.php'; // include the codes.php data
                     to explore the Jubail Mangrove Park - you can witness firsthand the lush vegetation and the prolific ecosystem it supports. Kayaking in the
                     mangroves is also a popular sport in the capital.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/MangroveNationalPark.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
