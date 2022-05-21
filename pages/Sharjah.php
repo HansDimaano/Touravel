@@ -29,6 +29,7 @@ include '../data/codes.php'; // include the codes.php data
 
 </head>
 <body>
+    <!-- (from codes.php) include the header code -->
     <?php echo $header_general ?>
 
     <!-- SHARJAH TITLE CONTAINER (each emirate title container has unique bg image, therefore I used inline css) -->
@@ -136,7 +137,7 @@ include '../data/codes.php'; // include the codes.php data
                     Sharjah Aquarium is a place where tourists can to a wide range of marine life. The aquarium comprises of 20 large tanks housing a large variety of 
                     oceanic marine life. The main purpose of this place was to encourage the conservation of marine life.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/SharjahAquarium.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -164,7 +165,7 @@ include '../data/codes.php'; // include the codes.php data
                     paradise on Earth. With the Khor Fakkan Beach present on the banks of Gulf of Oman and the Bay of Khor Fakkan, the city is geographically surrounded 
                     by the Hajar Mountains on its western end.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/KhorFakkan.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -192,7 +193,7 @@ include '../data/codes.php'; // include the codes.php data
                     fabulous architecture. In Arabic, the word 'Noor' means light, and Al Noor, true to its meaning, stands magnificently alongside the Khalid Lagoon on 
                     Buhaira Corniche.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/AlNoorMosque.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
