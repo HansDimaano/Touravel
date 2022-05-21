@@ -29,6 +29,7 @@ include '../data/codes.php'; // include the codes.php data
 
 </head>
 <body>
+    <!-- (from codes.php) include the header code -->
     <?php echo $header_general ?>
 
     <!-- DUBAI TITLE CONTAINER (each emirate title container has unique bg image, therefore I used inline css) -->
@@ -137,7 +138,7 @@ include '../data/codes.php'; // include the codes.php data
                     Get ready to enjoy exclusive access to the redefined, highest outdoor observatory in the world, spread across levels 148, 125 
                     and 124 of Burj Khalifa. 
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/BurjKhalifa.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -165,7 +166,7 @@ include '../data/codes.php'; // include the codes.php data
                     The luxury all-suite hotel includes a range of fine-dining restaurants, incredible beaches and the expansive Burj Al Arab Terrace. The Burj Al Arab 
                     has played host to a covetable guest list of VIPs and celebrities from all over the world, helping put Dubai on the global luxury tourism map. 
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/BurjAlArab.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
@@ -194,7 +195,7 @@ include '../data/codes.php'; // include the codes.php data
                     ocean or city views. The resort is a party and culinary hot spot with a range of restaurants, bars, and a nightclub, inviting to a new experience 
                     every day.
                 </p>
-                <a>CHECK OUT</a> <!-- Check Out Button -->
+                <a href="TouristSpots/PalmJumeirah.php">CHECK OUT</a> <!-- Check Out Button -->
             </div>
         </div>
     </section>
