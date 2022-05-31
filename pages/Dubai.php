@@ -284,7 +284,7 @@ include '../data/codes.php'; // include the codes.php data
                     <div class="hotel">
 
                         <!-- Hotel Image -->
-                        <img src="../images/one&only.png" />
+                        <img src="../images/one_only.png" />
 
                         <!-- Hotel Description Container -->
                         <div class="hotel_desc">
